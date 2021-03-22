@@ -59,11 +59,14 @@ namespace DobbelSpellen
 
         private void aboutUsToolStripMenuItem1_Click(object sender, EventArgs e)
         {
+            // als op about us wordt geklikt linkt hij door naar form 6
             Form6 aboutUs = new Form6();
             this.Hide();
             aboutUs.ShowDialog();
             this.Show();
         }
         #endregion
+
+
     }
 }
