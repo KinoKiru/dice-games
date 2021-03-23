@@ -65,7 +65,8 @@ namespace DobbelSpellen
             aboutUs.ShowDialog();
             this.Show();
         }
-
         #endregion
+
+
     }
 }
