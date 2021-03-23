@@ -127,35 +127,54 @@ namespace DobbelSpellen
             // play21ToolStripMenuItem2
             // 
             this.play21ToolStripMenuItem2.Name = "play21ToolStripMenuItem2";
-            this.play21ToolStripMenuItem2.Size = new System.Drawing.Size(198, 26);
+ Tberenpas
+            
+
+            this.play21ToolStripMenuItem2.Size = new System.Drawing.Size(157, 22);
+ Develop
             this.play21ToolStripMenuItem2.Text = "Play 21";
             this.play21ToolStripMenuItem2.Click += new System.EventHandler(this.play21ToolStripMenuItem2_Click);
             // 
             // hogerOfLagerToolStripMenuItem1
             // 
             this.hogerOfLagerToolStripMenuItem1.Name = "hogerOfLagerToolStripMenuItem1";
-            this.hogerOfLagerToolStripMenuItem1.Size = new System.Drawing.Size(198, 26);
+Tberenpas
+           
+
+            this.hogerOfLagerToolStripMenuItem1.Size = new System.Drawing.Size(157, 22);
+ Develop
             this.hogerOfLagerToolStripMenuItem1.Text = "Hoger of Lager";
             this.hogerOfLagerToolStripMenuItem1.Click += new System.EventHandler(this.hogerOfLagerToolStripMenuItem1_Click);
             // 
             // bonusDobbelToolStripMenuItem
             // 
             this.bonusDobbelToolStripMenuItem.Name = "bonusDobbelToolStripMenuItem";
-            this.bonusDobbelToolStripMenuItem.Size = new System.Drawing.Size(198, 26);
+ Tberenpas
+            
+            this.bonusDobbelToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
+Develop
             this.bonusDobbelToolStripMenuItem.Text = "Bonus Dobbel";
             this.bonusDobbelToolStripMenuItem.Click += new System.EventHandler(this.bonusDobbelToolStripMenuItem_Click);
             // 
             // raadHetWoordToolStripMenuItem1
             // 
             this.raadHetWoordToolStripMenuItem1.Name = "raadHetWoordToolStripMenuItem1";
+ Tberenpas
             this.raadHetWoordToolStripMenuItem1.Size = new System.Drawing.Size(198, 26);
+
+            this.raadHetWoordToolStripMenuItem1.Size = new System.Drawing.Size(157, 22);
+ Develop
             this.raadHetWoordToolStripMenuItem1.Text = "Raad het woord";
             this.raadHetWoordToolStripMenuItem1.Click += new System.EventHandler(this.raadHetWoordToolStripMenuItem1_Click);
             // 
             // aboutUsToolStripMenuItem1
             // 
             this.aboutUsToolStripMenuItem1.Name = "aboutUsToolStripMenuItem1";
-            this.aboutUsToolStripMenuItem1.Size = new System.Drawing.Size(198, 26);
+ Tberenpas
+            
+
+            this.aboutUsToolStripMenuItem1.Size = new System.Drawing.Size(157, 22);
+ Develop
             this.aboutUsToolStripMenuItem1.Text = "About us";
             this.aboutUsToolStripMenuItem1.Click += new System.EventHandler(this.aboutUsToolStripMenuItem1_Click);
             // 
@@ -190,7 +209,7 @@ namespace DobbelSpellen
             this.textBox8.Location = new System.Drawing.Point(95, 404);
             this.textBox8.Name = "textBox8";
             this.textBox8.ReadOnly = true;
-            this.textBox8.Size = new System.Drawing.Size(100, 20);
+            this.textBox8.Size = new System.Drawing.Size(105, 20);
             this.textBox8.TabIndex = 20;
             this.textBox8.Text = "Bonus Dobbel";
             // 
@@ -208,7 +227,7 @@ namespace DobbelSpellen
             this.textBox7.Location = new System.Drawing.Point(95, 378);
             this.textBox7.Name = "textBox7";
             this.textBox7.ReadOnly = true;
-            this.textBox7.Size = new System.Drawing.Size(100, 20);
+            this.textBox7.Size = new System.Drawing.Size(105, 20);
             this.textBox7.TabIndex = 18;
             this.textBox7.Text = "0327099@student.rocvantwente.nl";
             // 
@@ -226,7 +245,7 @@ namespace DobbelSpellen
             this.textBox6.Location = new System.Drawing.Point(95, 352);
             this.textBox6.Name = "textBox6";
             this.textBox6.ReadOnly = true;
-            this.textBox6.Size = new System.Drawing.Size(100, 20);
+            this.textBox6.Size = new System.Drawing.Size(105, 20);
             this.textBox6.TabIndex = 16;
             this.textBox6.Text = "KinoKiru";
             // 
@@ -244,7 +263,7 @@ namespace DobbelSpellen
             this.textBox5.Location = new System.Drawing.Point(95, 326);
             this.textBox5.Name = "textBox5";
             this.textBox5.ReadOnly = true;
-            this.textBox5.Size = new System.Drawing.Size(100, 20);
+            this.textBox5.Size = new System.Drawing.Size(105, 20);
             this.textBox5.TabIndex = 14;
             this.textBox5.Text = "Software Developer";
             // 
@@ -262,9 +281,9 @@ namespace DobbelSpellen
             this.textBox4.Location = new System.Drawing.Point(95, 300);
             this.textBox4.Name = "textBox4";
             this.textBox4.ReadOnly = true;
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
+            this.textBox4.Size = new System.Drawing.Size(105, 20);
             this.textBox4.TabIndex = 12;
-            this.textBox4.Text = "18-10-2004";
+            this.textBox4.Text = "18/10/2004";
             // 
             // label4
             // 
@@ -280,7 +299,7 @@ namespace DobbelSpellen
             this.textBox3.Location = new System.Drawing.Point(95, 274);
             this.textBox3.Name = "textBox3";
             this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
+            this.textBox3.Size = new System.Drawing.Size(105, 20);
             this.textBox3.TabIndex = 10;
             this.textBox3.Text = "0327099";
             // 
@@ -295,10 +314,10 @@ namespace DobbelSpellen
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(100, 248);
+            this.textBox2.Location = new System.Drawing.Point(95, 248);
             this.textBox2.Name = "textBox2";
             this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
+            this.textBox2.Size = new System.Drawing.Size(105, 20);
             this.textBox2.TabIndex = 8;
             this.textBox2.Text = "I0SDA";
             // 
@@ -313,10 +332,10 @@ namespace DobbelSpellen
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(100, 222);
+            this.textBox1.Location = new System.Drawing.Point(95, 222);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.Size = new System.Drawing.Size(105, 20);
             this.textBox1.TabIndex = 6;
             this.textBox1.Text = "Youri Bakker";
             // 
@@ -370,7 +389,7 @@ namespace DobbelSpellen
             this.textBox9.Location = new System.Drawing.Point(95, 400);
             this.textBox9.Name = "textBox9";
             this.textBox9.ReadOnly = true;
-            this.textBox9.Size = new System.Drawing.Size(100, 20);
+            this.textBox9.Size = new System.Drawing.Size(105, 20);
             this.textBox9.TabIndex = 36;
             this.textBox9.Text = "Play 21";
             // 
@@ -387,8 +406,9 @@ namespace DobbelSpellen
             // 
             this.textBox10.Location = new System.Drawing.Point(95, 374);
             this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(100, 20);
+            this.textBox10.Size = new System.Drawing.Size(105, 20);
             this.textBox10.TabIndex = 34;
+            this.textBox10.Text = "0328026@student.rocvantwente.nl";
             // 
             // label10
             // 
@@ -403,8 +423,9 @@ namespace DobbelSpellen
             // 
             this.textBox11.Location = new System.Drawing.Point(95, 348);
             this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(100, 20);
+            this.textBox11.Size = new System.Drawing.Size(105, 20);
             this.textBox11.TabIndex = 32;
+            this.textBox11.Text = "LuukBekhuis0328026";
             // 
             // label11
             // 
@@ -419,8 +440,9 @@ namespace DobbelSpellen
             // 
             this.textBox12.Location = new System.Drawing.Point(95, 322);
             this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(100, 20);
+            this.textBox12.Size = new System.Drawing.Size(105, 20);
             this.textBox12.TabIndex = 30;
+            this.textBox12.Text = "Software Developer";
             // 
             // label12
             // 
@@ -435,8 +457,9 @@ namespace DobbelSpellen
             // 
             this.textBox13.Location = new System.Drawing.Point(95, 296);
             this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(100, 20);
+            this.textBox13.Size = new System.Drawing.Size(105, 20);
             this.textBox13.TabIndex = 28;
+            this.textBox13.Text = "15/09/2003";
             // 
             // label13
             // 
@@ -451,8 +474,9 @@ namespace DobbelSpellen
             // 
             this.textBox14.Location = new System.Drawing.Point(95, 270);
             this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(100, 20);
+            this.textBox14.Size = new System.Drawing.Size(105, 20);
             this.textBox14.TabIndex = 26;
+            this.textBox14.Text = "0328026";
             // 
             // label14
             // 
@@ -465,10 +489,10 @@ namespace DobbelSpellen
             // 
             // textBox15
             // 
-            this.textBox15.Location = new System.Drawing.Point(100, 244);
+            this.textBox15.Location = new System.Drawing.Point(95, 244);
             this.textBox15.Name = "textBox15";
             this.textBox15.ReadOnly = true;
-            this.textBox15.Size = new System.Drawing.Size(100, 20);
+            this.textBox15.Size = new System.Drawing.Size(105, 20);
             this.textBox15.TabIndex = 24;
             this.textBox15.Text = "I0SDA";
             // 
@@ -483,10 +507,10 @@ namespace DobbelSpellen
             // 
             // textBox16
             // 
-            this.textBox16.Location = new System.Drawing.Point(100, 218);
+            this.textBox16.Location = new System.Drawing.Point(95, 218);
             this.textBox16.Name = "textBox16";
             this.textBox16.ReadOnly = true;
-            this.textBox16.Size = new System.Drawing.Size(100, 20);
+            this.textBox16.Size = new System.Drawing.Size(105, 20);
             this.textBox16.TabIndex = 22;
             this.textBox16.Text = "Luuk Bekhuis";
             // 
@@ -501,9 +525,11 @@ namespace DobbelSpellen
             // 
             // pbInfo2
             // 
+            this.pbInfo2.Image = ((System.Drawing.Image)(resources.GetObject("pbInfo2.Image")));
             this.pbInfo2.Location = new System.Drawing.Point(6, 19);
             this.pbInfo2.Name = "pbInfo2";
             this.pbInfo2.Size = new System.Drawing.Size(194, 175);
+            this.pbInfo2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbInfo2.TabIndex = 5;
             this.pbInfo2.TabStop = false;
             // 
@@ -538,7 +564,7 @@ namespace DobbelSpellen
             this.textBox17.Location = new System.Drawing.Point(95, 400);
             this.textBox17.Name = "textBox17";
             this.textBox17.ReadOnly = true;
-            this.textBox17.Size = new System.Drawing.Size(100, 20);
+            this.textBox17.Size = new System.Drawing.Size(105, 20);
             this.textBox17.TabIndex = 36;
             this.textBox17.Text = "Hoger of Lager";
             // 
@@ -555,7 +581,7 @@ namespace DobbelSpellen
             // 
             this.textBox18.Location = new System.Drawing.Point(95, 374);
             this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(100, 20);
+            this.textBox18.Size = new System.Drawing.Size(105, 20);
             this.textBox18.TabIndex = 34;
             this.textBox18.Text = "0330187@student.rocvantwente.nl";
             // 
@@ -572,7 +598,7 @@ namespace DobbelSpellen
             // 
             this.textBox19.Location = new System.Drawing.Point(95, 348);
             this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(100, 20);
+            this.textBox19.Size = new System.Drawing.Size(105, 20);
             this.textBox19.TabIndex = 32;
             this.textBox19.Text = "Thomsd";
             // 
@@ -589,7 +615,7 @@ namespace DobbelSpellen
             // 
             this.textBox20.Location = new System.Drawing.Point(95, 322);
             this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(100, 20);
+            this.textBox20.Size = new System.Drawing.Size(105, 20);
             this.textBox20.TabIndex = 30;
             this.textBox20.Text = "Software Developer";
             // 
@@ -606,7 +632,7 @@ namespace DobbelSpellen
             // 
             this.textBox21.Location = new System.Drawing.Point(95, 296);
             this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(100, 20);
+            this.textBox21.Size = new System.Drawing.Size(105, 20);
             this.textBox21.TabIndex = 28;
             this.textBox21.Text = "15-11-2003";
             // 
@@ -623,7 +649,7 @@ namespace DobbelSpellen
             // 
             this.textBox22.Location = new System.Drawing.Point(95, 270);
             this.textBox22.Name = "textBox22";
-            this.textBox22.Size = new System.Drawing.Size(100, 20);
+            this.textBox22.Size = new System.Drawing.Size(105, 20);
             this.textBox22.TabIndex = 26;
             this.textBox22.Text = "0330187";
             // 
@@ -638,9 +664,9 @@ namespace DobbelSpellen
             // 
             // textBox23
             // 
-            this.textBox23.Location = new System.Drawing.Point(100, 244);
+            this.textBox23.Location = new System.Drawing.Point(95, 244);
             this.textBox23.Name = "textBox23";
-            this.textBox23.Size = new System.Drawing.Size(100, 20);
+            this.textBox23.Size = new System.Drawing.Size(105, 20);
             this.textBox23.TabIndex = 24;
             this.textBox23.Text = "I0SDA";
             // 
@@ -655,10 +681,10 @@ namespace DobbelSpellen
             // 
             // textBox24
             // 
-            this.textBox24.Location = new System.Drawing.Point(100, 218);
+            this.textBox24.Location = new System.Drawing.Point(95, 218);
             this.textBox24.Name = "textBox24";
             this.textBox24.ReadOnly = true;
-            this.textBox24.Size = new System.Drawing.Size(100, 20);
+            this.textBox24.Size = new System.Drawing.Size(105, 20);
             this.textBox24.TabIndex = 22;
             this.textBox24.Text = "Thomas Berenpas";
             // 
