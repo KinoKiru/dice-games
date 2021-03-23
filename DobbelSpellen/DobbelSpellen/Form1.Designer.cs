@@ -469,6 +469,7 @@ namespace DobbelSpellen
             this.textBox15.ReadOnly = true;
             this.textBox15.Size = new System.Drawing.Size(100, 20);
             this.textBox15.TabIndex = 24;
+            this.textBox15.Text = "I0SDA";
             // 
             // label15
             // 
