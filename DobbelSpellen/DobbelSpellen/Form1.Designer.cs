@@ -56,9 +56,6 @@ namespace DobbelSpellen
             this.label1 = new System.Windows.Forms.Label();
             this.pbInfo1 = new System.Windows.Forms.PictureBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.pbInfo2 = new System.Windows.Forms.PictureBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.pbInfo3 = new System.Windows.Forms.PictureBox();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.textBox10 = new System.Windows.Forms.TextBox();
@@ -75,6 +72,8 @@ namespace DobbelSpellen
             this.label15 = new System.Windows.Forms.Label();
             this.textBox16 = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
+            this.pbInfo2 = new System.Windows.Forms.PictureBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.textBox17 = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.textBox18 = new System.Windows.Forms.TextBox();
@@ -91,6 +90,7 @@ namespace DobbelSpellen
             this.label23 = new System.Windows.Forms.Label();
             this.textBox24 = new System.Windows.Forms.TextBox();
             this.label24 = new System.Windows.Forms.Label();
+            this.pbInfo3 = new System.Windows.Forms.PictureBox();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbInfo1)).BeginInit();
@@ -126,35 +126,35 @@ namespace DobbelSpellen
             // play21ToolStripMenuItem2
             // 
             this.play21ToolStripMenuItem2.Name = "play21ToolStripMenuItem2";
-            this.play21ToolStripMenuItem2.Size = new System.Drawing.Size(157, 22);
+            this.play21ToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
             this.play21ToolStripMenuItem2.Text = "Play 21";
             this.play21ToolStripMenuItem2.Click += new System.EventHandler(this.play21ToolStripMenuItem2_Click);
             // 
             // hogerOfLagerToolStripMenuItem1
             // 
             this.hogerOfLagerToolStripMenuItem1.Name = "hogerOfLagerToolStripMenuItem1";
-            this.hogerOfLagerToolStripMenuItem1.Size = new System.Drawing.Size(157, 22);
+            this.hogerOfLagerToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.hogerOfLagerToolStripMenuItem1.Text = "Hoger of Lager";
             this.hogerOfLagerToolStripMenuItem1.Click += new System.EventHandler(this.hogerOfLagerToolStripMenuItem1_Click);
             // 
             // bonusDobbelToolStripMenuItem
             // 
             this.bonusDobbelToolStripMenuItem.Name = "bonusDobbelToolStripMenuItem";
-            this.bonusDobbelToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
+            this.bonusDobbelToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.bonusDobbelToolStripMenuItem.Text = "Bonus Dobbel";
             this.bonusDobbelToolStripMenuItem.Click += new System.EventHandler(this.bonusDobbelToolStripMenuItem_Click);
             // 
             // raadHetWoordToolStripMenuItem1
             // 
             this.raadHetWoordToolStripMenuItem1.Name = "raadHetWoordToolStripMenuItem1";
-            this.raadHetWoordToolStripMenuItem1.Size = new System.Drawing.Size(157, 22);
+            this.raadHetWoordToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.raadHetWoordToolStripMenuItem1.Text = "Raad het woord";
             this.raadHetWoordToolStripMenuItem1.Click += new System.EventHandler(this.raadHetWoordToolStripMenuItem1_Click);
             // 
             // aboutUsToolStripMenuItem1
             // 
             this.aboutUsToolStripMenuItem1.Name = "aboutUsToolStripMenuItem1";
-            this.aboutUsToolStripMenuItem1.Size = new System.Drawing.Size(157, 22);
+            this.aboutUsToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.aboutUsToolStripMenuItem1.Text = "About us";
             this.aboutUsToolStripMenuItem1.Click += new System.EventHandler(this.aboutUsToolStripMenuItem1_Click);
             // 
@@ -364,48 +364,6 @@ namespace DobbelSpellen
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "groupBox2";
             // 
-            // pbInfo2
-            // 
-            this.pbInfo2.Location = new System.Drawing.Point(6, 19);
-            this.pbInfo2.Name = "pbInfo2";
-            this.pbInfo2.Size = new System.Drawing.Size(194, 175);
-            this.pbInfo2.TabIndex = 5;
-            this.pbInfo2.TabStop = false;
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.textBox17);
-            this.groupBox3.Controls.Add(this.label17);
-            this.groupBox3.Controls.Add(this.textBox18);
-            this.groupBox3.Controls.Add(this.label18);
-            this.groupBox3.Controls.Add(this.textBox19);
-            this.groupBox3.Controls.Add(this.label19);
-            this.groupBox3.Controls.Add(this.textBox20);
-            this.groupBox3.Controls.Add(this.label20);
-            this.groupBox3.Controls.Add(this.textBox21);
-            this.groupBox3.Controls.Add(this.label21);
-            this.groupBox3.Controls.Add(this.textBox22);
-            this.groupBox3.Controls.Add(this.label22);
-            this.groupBox3.Controls.Add(this.textBox23);
-            this.groupBox3.Controls.Add(this.label23);
-            this.groupBox3.Controls.Add(this.textBox24);
-            this.groupBox3.Controls.Add(this.label24);
-            this.groupBox3.Controls.Add(this.pbInfo3);
-            this.groupBox3.Location = new System.Drawing.Point(561, 40);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(213, 448);
-            this.groupBox3.TabIndex = 3;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "groupBox3";
-            // 
-            // pbInfo3
-            // 
-            this.pbInfo3.Location = new System.Drawing.Point(6, 19);
-            this.pbInfo3.Name = "pbInfo3";
-            this.pbInfo3.Size = new System.Drawing.Size(194, 175);
-            this.pbInfo3.TabIndex = 5;
-            this.pbInfo3.TabStop = false;
-            // 
             // textBox9
             // 
             this.textBox9.Location = new System.Drawing.Point(95, 400);
@@ -508,6 +466,7 @@ namespace DobbelSpellen
             // 
             this.textBox15.Location = new System.Drawing.Point(100, 244);
             this.textBox15.Name = "textBox15";
+            this.textBox15.ReadOnly = true;
             this.textBox15.Size = new System.Drawing.Size(100, 20);
             this.textBox15.TabIndex = 24;
             // 
@@ -537,6 +496,40 @@ namespace DobbelSpellen
             this.label16.Size = new System.Drawing.Size(75, 13);
             this.label16.TabIndex = 21;
             this.label16.Text = "Naam Student";
+            // 
+            // pbInfo2
+            // 
+            this.pbInfo2.Location = new System.Drawing.Point(6, 19);
+            this.pbInfo2.Name = "pbInfo2";
+            this.pbInfo2.Size = new System.Drawing.Size(194, 175);
+            this.pbInfo2.TabIndex = 5;
+            this.pbInfo2.TabStop = false;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.textBox17);
+            this.groupBox3.Controls.Add(this.label17);
+            this.groupBox3.Controls.Add(this.textBox18);
+            this.groupBox3.Controls.Add(this.label18);
+            this.groupBox3.Controls.Add(this.textBox19);
+            this.groupBox3.Controls.Add(this.label19);
+            this.groupBox3.Controls.Add(this.textBox20);
+            this.groupBox3.Controls.Add(this.label20);
+            this.groupBox3.Controls.Add(this.textBox21);
+            this.groupBox3.Controls.Add(this.label21);
+            this.groupBox3.Controls.Add(this.textBox22);
+            this.groupBox3.Controls.Add(this.label22);
+            this.groupBox3.Controls.Add(this.textBox23);
+            this.groupBox3.Controls.Add(this.label23);
+            this.groupBox3.Controls.Add(this.textBox24);
+            this.groupBox3.Controls.Add(this.label24);
+            this.groupBox3.Controls.Add(this.pbInfo3);
+            this.groupBox3.Location = new System.Drawing.Point(561, 40);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(213, 448);
+            this.groupBox3.TabIndex = 3;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "groupBox3";
             // 
             // textBox17
             // 
@@ -669,6 +662,14 @@ namespace DobbelSpellen
             this.label24.Size = new System.Drawing.Size(75, 13);
             this.label24.TabIndex = 21;
             this.label24.Text = "Naam Student";
+            // 
+            // pbInfo3
+            // 
+            this.pbInfo3.Location = new System.Drawing.Point(6, 19);
+            this.pbInfo3.Name = "pbInfo3";
+            this.pbInfo3.Size = new System.Drawing.Size(194, 175);
+            this.pbInfo3.TabIndex = 5;
+            this.pbInfo3.TabStop = false;
             // 
             // Form1
             // 
