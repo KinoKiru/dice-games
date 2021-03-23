@@ -103,12 +103,11 @@ namespace DobbelSpellen
             // menuStrip1
             // 
             this.menuStrip1.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.play21ToolStripMenuItem1});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(848, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(848, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -121,60 +120,41 @@ namespace DobbelSpellen
             this.raadHetWoordToolStripMenuItem1,
             this.aboutUsToolStripMenuItem1});
             this.play21ToolStripMenuItem1.Name = "play21ToolStripMenuItem1";
-            this.play21ToolStripMenuItem1.Size = new System.Drawing.Size(52, 24);
+            this.play21ToolStripMenuItem1.Size = new System.Drawing.Size(43, 20);
             this.play21ToolStripMenuItem1.Text = "links";
             // 
             // play21ToolStripMenuItem2
             // 
             this.play21ToolStripMenuItem2.Name = "play21ToolStripMenuItem2";
- Tberenpas
-            
-
             this.play21ToolStripMenuItem2.Size = new System.Drawing.Size(157, 22);
- Develop
             this.play21ToolStripMenuItem2.Text = "Play 21";
             this.play21ToolStripMenuItem2.Click += new System.EventHandler(this.play21ToolStripMenuItem2_Click);
             // 
             // hogerOfLagerToolStripMenuItem1
             // 
             this.hogerOfLagerToolStripMenuItem1.Name = "hogerOfLagerToolStripMenuItem1";
-Tberenpas
-           
-
             this.hogerOfLagerToolStripMenuItem1.Size = new System.Drawing.Size(157, 22);
- Develop
             this.hogerOfLagerToolStripMenuItem1.Text = "Hoger of Lager";
             this.hogerOfLagerToolStripMenuItem1.Click += new System.EventHandler(this.hogerOfLagerToolStripMenuItem1_Click);
             // 
             // bonusDobbelToolStripMenuItem
             // 
             this.bonusDobbelToolStripMenuItem.Name = "bonusDobbelToolStripMenuItem";
- Tberenpas
-            
             this.bonusDobbelToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
-Develop
             this.bonusDobbelToolStripMenuItem.Text = "Bonus Dobbel";
             this.bonusDobbelToolStripMenuItem.Click += new System.EventHandler(this.bonusDobbelToolStripMenuItem_Click);
             // 
             // raadHetWoordToolStripMenuItem1
             // 
             this.raadHetWoordToolStripMenuItem1.Name = "raadHetWoordToolStripMenuItem1";
- Tberenpas
-            this.raadHetWoordToolStripMenuItem1.Size = new System.Drawing.Size(198, 26);
-
             this.raadHetWoordToolStripMenuItem1.Size = new System.Drawing.Size(157, 22);
- Develop
             this.raadHetWoordToolStripMenuItem1.Text = "Raad het woord";
             this.raadHetWoordToolStripMenuItem1.Click += new System.EventHandler(this.raadHetWoordToolStripMenuItem1_Click);
             // 
             // aboutUsToolStripMenuItem1
             // 
             this.aboutUsToolStripMenuItem1.Name = "aboutUsToolStripMenuItem1";
- Tberenpas
-            
-
             this.aboutUsToolStripMenuItem1.Size = new System.Drawing.Size(157, 22);
- Develop
             this.aboutUsToolStripMenuItem1.Text = "About us";
             this.aboutUsToolStripMenuItem1.Click += new System.EventHandler(this.aboutUsToolStripMenuItem1_Click);
             // 
@@ -218,7 +198,7 @@ Develop
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(19, 407);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(32, 15);
+            this.label8.Size = new System.Drawing.Size(28, 13);
             this.label8.TabIndex = 19;
             this.label8.Text = "Spel";
             // 
@@ -236,7 +216,7 @@ Develop
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(19, 381);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(43, 15);
+            this.label7.Size = new System.Drawing.Size(35, 13);
             this.label7.TabIndex = 17;
             this.label7.Text = "E-mail";
             // 
@@ -254,7 +234,7 @@ Develop
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(19, 355);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(65, 15);
+            this.label6.Size = new System.Drawing.Size(60, 13);
             this.label6.TabIndex = 15;
             this.label6.Text = "Github Acc";
             // 
@@ -272,7 +252,7 @@ Develop
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(19, 329);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(60, 15);
+            this.label5.Size = new System.Drawing.Size(51, 13);
             this.label5.TabIndex = 13;
             this.label5.Text = "Opleiding";
             // 
@@ -290,7 +270,7 @@ Develop
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(14, 303);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(93, 15);
+            this.label4.Size = new System.Drawing.Size(80, 13);
             this.label4.TabIndex = 11;
             this.label4.Text = "Geboortedatum";
             // 
@@ -308,7 +288,7 @@ Develop
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(19, 277);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(62, 15);
+            this.label3.Size = new System.Drawing.Size(53, 13);
             this.label3.TabIndex = 9;
             this.label3.Text = "Leerling n";
             // 
@@ -326,7 +306,7 @@ Develop
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(19, 251);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(31, 15);
+            this.label2.Size = new System.Drawing.Size(27, 13);
             this.label2.TabIndex = 7;
             this.label2.Text = "Klas";
             // 
@@ -344,7 +324,7 @@ Develop
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(19, 225);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(86, 15);
+            this.label1.Size = new System.Drawing.Size(75, 13);
             this.label1.TabIndex = 5;
             this.label1.Text = "Naam Student";
             // 
@@ -398,7 +378,7 @@ Develop
             this.label9.AutoSize = true;
             this.label9.Location = new System.Drawing.Point(19, 403);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(32, 15);
+            this.label9.Size = new System.Drawing.Size(28, 13);
             this.label9.TabIndex = 35;
             this.label9.Text = "Spel";
             // 
@@ -415,7 +395,7 @@ Develop
             this.label10.AutoSize = true;
             this.label10.Location = new System.Drawing.Point(19, 377);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(43, 15);
+            this.label10.Size = new System.Drawing.Size(35, 13);
             this.label10.TabIndex = 33;
             this.label10.Text = "E-mail";
             // 
@@ -432,7 +412,7 @@ Develop
             this.label11.AutoSize = true;
             this.label11.Location = new System.Drawing.Point(19, 351);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(65, 15);
+            this.label11.Size = new System.Drawing.Size(60, 13);
             this.label11.TabIndex = 31;
             this.label11.Text = "Github Acc";
             // 
@@ -449,7 +429,7 @@ Develop
             this.label12.AutoSize = true;
             this.label12.Location = new System.Drawing.Point(19, 325);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(60, 15);
+            this.label12.Size = new System.Drawing.Size(51, 13);
             this.label12.TabIndex = 29;
             this.label12.Text = "Opleiding";
             // 
@@ -466,7 +446,7 @@ Develop
             this.label13.AutoSize = true;
             this.label13.Location = new System.Drawing.Point(14, 299);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(93, 15);
+            this.label13.Size = new System.Drawing.Size(80, 13);
             this.label13.TabIndex = 27;
             this.label13.Text = "Geboortedatum";
             // 
@@ -483,7 +463,7 @@ Develop
             this.label14.AutoSize = true;
             this.label14.Location = new System.Drawing.Point(19, 273);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(62, 15);
+            this.label14.Size = new System.Drawing.Size(53, 13);
             this.label14.TabIndex = 25;
             this.label14.Text = "Leerling n";
             // 
@@ -501,7 +481,7 @@ Develop
             this.label15.AutoSize = true;
             this.label15.Location = new System.Drawing.Point(19, 247);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(31, 15);
+            this.label15.Size = new System.Drawing.Size(27, 13);
             this.label15.TabIndex = 23;
             this.label15.Text = "Klas";
             // 
@@ -519,7 +499,7 @@ Develop
             this.label16.AutoSize = true;
             this.label16.Location = new System.Drawing.Point(19, 221);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(86, 15);
+            this.label16.Size = new System.Drawing.Size(75, 13);
             this.label16.TabIndex = 21;
             this.label16.Text = "Naam Student";
             // 
@@ -573,7 +553,7 @@ Develop
             this.label17.AutoSize = true;
             this.label17.Location = new System.Drawing.Point(19, 403);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(32, 15);
+            this.label17.Size = new System.Drawing.Size(28, 13);
             this.label17.TabIndex = 35;
             this.label17.Text = "Spel";
             // 
@@ -583,14 +563,13 @@ Develop
             this.textBox18.Name = "textBox18";
             this.textBox18.Size = new System.Drawing.Size(105, 20);
             this.textBox18.TabIndex = 34;
-            this.textBox18.Text = "0330187@student.rocvantwente.nl";
             // 
             // label18
             // 
             this.label18.AutoSize = true;
             this.label18.Location = new System.Drawing.Point(19, 377);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(43, 15);
+            this.label18.Size = new System.Drawing.Size(35, 13);
             this.label18.TabIndex = 33;
             this.label18.Text = "E-mail";
             // 
@@ -600,14 +579,13 @@ Develop
             this.textBox19.Name = "textBox19";
             this.textBox19.Size = new System.Drawing.Size(105, 20);
             this.textBox19.TabIndex = 32;
-            this.textBox19.Text = "Thomsd";
             // 
             // label19
             // 
             this.label19.AutoSize = true;
             this.label19.Location = new System.Drawing.Point(19, 351);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(65, 15);
+            this.label19.Size = new System.Drawing.Size(60, 13);
             this.label19.TabIndex = 31;
             this.label19.Text = "Github Acc";
             // 
@@ -617,14 +595,13 @@ Develop
             this.textBox20.Name = "textBox20";
             this.textBox20.Size = new System.Drawing.Size(105, 20);
             this.textBox20.TabIndex = 30;
-            this.textBox20.Text = "Software Developer";
             // 
             // label20
             // 
             this.label20.AutoSize = true;
             this.label20.Location = new System.Drawing.Point(19, 325);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(60, 15);
+            this.label20.Size = new System.Drawing.Size(51, 13);
             this.label20.TabIndex = 29;
             this.label20.Text = "Opleiding";
             // 
@@ -634,14 +611,13 @@ Develop
             this.textBox21.Name = "textBox21";
             this.textBox21.Size = new System.Drawing.Size(105, 20);
             this.textBox21.TabIndex = 28;
-            this.textBox21.Text = "15-11-2003";
             // 
             // label21
             // 
             this.label21.AutoSize = true;
             this.label21.Location = new System.Drawing.Point(14, 299);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(93, 15);
+            this.label21.Size = new System.Drawing.Size(80, 13);
             this.label21.TabIndex = 27;
             this.label21.Text = "Geboortedatum";
             // 
@@ -651,14 +627,13 @@ Develop
             this.textBox22.Name = "textBox22";
             this.textBox22.Size = new System.Drawing.Size(105, 20);
             this.textBox22.TabIndex = 26;
-            this.textBox22.Text = "0330187";
             // 
             // label22
             // 
             this.label22.AutoSize = true;
             this.label22.Location = new System.Drawing.Point(19, 273);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(62, 15);
+            this.label22.Size = new System.Drawing.Size(53, 13);
             this.label22.TabIndex = 25;
             this.label22.Text = "Leerling n";
             // 
@@ -668,14 +643,13 @@ Develop
             this.textBox23.Name = "textBox23";
             this.textBox23.Size = new System.Drawing.Size(105, 20);
             this.textBox23.TabIndex = 24;
-            this.textBox23.Text = "I0SDA";
             // 
             // label23
             // 
             this.label23.AutoSize = true;
             this.label23.Location = new System.Drawing.Point(19, 247);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(31, 15);
+            this.label23.Size = new System.Drawing.Size(27, 13);
             this.label23.TabIndex = 23;
             this.label23.Text = "Klas";
             // 
@@ -693,17 +667,15 @@ Develop
             this.label24.AutoSize = true;
             this.label24.Location = new System.Drawing.Point(19, 221);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(86, 15);
+            this.label24.Size = new System.Drawing.Size(75, 13);
             this.label24.TabIndex = 21;
             this.label24.Text = "Naam Student";
             // 
             // pbInfo3
             // 
-            this.pbInfo3.Image = ((System.Drawing.Image)(resources.GetObject("pbInfo3.Image")));
             this.pbInfo3.Location = new System.Drawing.Point(6, 19);
             this.pbInfo3.Name = "pbInfo3";
             this.pbInfo3.Size = new System.Drawing.Size(194, 175);
-            this.pbInfo3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbInfo3.TabIndex = 5;
             this.pbInfo3.TabStop = false;
             // 
