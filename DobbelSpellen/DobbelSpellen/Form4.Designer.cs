@@ -44,7 +44,7 @@ namespace DobbelSpellen
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.tbNaam2 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.gbPlayer1 = new System.Windows.Forms.GroupBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.lbpuntentelling = new System.Windows.Forms.ListBox();
@@ -54,7 +54,7 @@ namespace DobbelSpellen
             this.pb3 = new System.Windows.Forms.PictureBox();
             this.pb2 = new System.Windows.Forms.PictureBox();
             this.pb1 = new System.Windows.Forms.PictureBox();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.gbSpeler2 = new System.Windows.Forms.GroupBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.lbOnderpuntentelling = new System.Windows.Forms.ListBox();
@@ -72,12 +72,12 @@ namespace DobbelSpellen
             this.lbWinnaar = new System.Windows.Forms.ListBox();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.gbPlayer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb1)).BeginInit();
-            this.groupBox4.SuspendLayout();
+            this.gbSpeler2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbOnder4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbOnder3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbOnder2)).BeginInit();
@@ -210,7 +210,7 @@ namespace DobbelSpellen
             this.tbNaam2.Name = "tbNaam2";
             this.tbNaam2.Size = new System.Drawing.Size(100, 20);
             this.tbNaam2.TabIndex = 3;
-            this.tbNaam2.TextChanged += new System.EventHandler(this.tbNaam2_TextChanged);
+            this.tbNaam2.TextChanged += new System.EventHandler(this.tbNaam_TextChanged);
             // 
             // label4
             // 
@@ -221,23 +221,23 @@ namespace DobbelSpellen
             this.label4.TabIndex = 2;
             this.label4.Text = "Naam:";
             // 
-            // groupBox2
+            // gbPlayer1
             // 
-            this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Controls.Add(this.label5);
-            this.groupBox2.Controls.Add(this.lbpuntentelling);
-            this.groupBox2.Controls.Add(this.tbPunten);
-            this.groupBox2.Controls.Add(this.cmbBonus);
-            this.groupBox2.Controls.Add(this.pb4);
-            this.groupBox2.Controls.Add(this.pb3);
-            this.groupBox2.Controls.Add(this.pb2);
-            this.groupBox2.Controls.Add(this.pb1);
-            this.groupBox2.Location = new System.Drawing.Point(333, 12);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1009, 219);
-            this.groupBox2.TabIndex = 2;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Speler 1 naam";
+            this.gbPlayer1.Controls.Add(this.label6);
+            this.gbPlayer1.Controls.Add(this.label5);
+            this.gbPlayer1.Controls.Add(this.lbpuntentelling);
+            this.gbPlayer1.Controls.Add(this.tbPunten);
+            this.gbPlayer1.Controls.Add(this.cmbBonus);
+            this.gbPlayer1.Controls.Add(this.pb4);
+            this.gbPlayer1.Controls.Add(this.pb3);
+            this.gbPlayer1.Controls.Add(this.pb2);
+            this.gbPlayer1.Controls.Add(this.pb1);
+            this.gbPlayer1.Location = new System.Drawing.Point(333, 12);
+            this.gbPlayer1.Name = "gbPlayer1";
+            this.gbPlayer1.Size = new System.Drawing.Size(1009, 219);
+            this.gbPlayer1.TabIndex = 2;
+            this.gbPlayer1.TabStop = false;
+            this.gbPlayer1.Text = "Speler 1 naam";
             // 
             // label6
             // 
@@ -317,23 +317,23 @@ namespace DobbelSpellen
             this.pb1.TabIndex = 0;
             this.pb1.TabStop = false;
             // 
-            // groupBox4
+            // gbSpeler2
             // 
-            this.groupBox4.Controls.Add(this.label7);
-            this.groupBox4.Controls.Add(this.label8);
-            this.groupBox4.Controls.Add(this.lbOnderpuntentelling);
-            this.groupBox4.Controls.Add(this.tbOnderPunten);
-            this.groupBox4.Controls.Add(this.cbOnderBonus);
-            this.groupBox4.Controls.Add(this.pbOnder4);
-            this.groupBox4.Controls.Add(this.pbOnder3);
-            this.groupBox4.Controls.Add(this.pbOnder2);
-            this.groupBox4.Controls.Add(this.pbOnder1);
-            this.groupBox4.Location = new System.Drawing.Point(333, 298);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(1009, 219);
-            this.groupBox4.TabIndex = 3;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Speler 2 naam";
+            this.gbSpeler2.Controls.Add(this.label7);
+            this.gbSpeler2.Controls.Add(this.label8);
+            this.gbSpeler2.Controls.Add(this.lbOnderpuntentelling);
+            this.gbSpeler2.Controls.Add(this.tbOnderPunten);
+            this.gbSpeler2.Controls.Add(this.cbOnderBonus);
+            this.gbSpeler2.Controls.Add(this.pbOnder4);
+            this.gbSpeler2.Controls.Add(this.pbOnder3);
+            this.gbSpeler2.Controls.Add(this.pbOnder2);
+            this.gbSpeler2.Controls.Add(this.pbOnder1);
+            this.gbSpeler2.Location = new System.Drawing.Point(333, 298);
+            this.gbSpeler2.Name = "gbSpeler2";
+            this.gbSpeler2.Size = new System.Drawing.Size(1009, 219);
+            this.gbSpeler2.TabIndex = 3;
+            this.gbSpeler2.TabStop = false;
+            this.gbSpeler2.Text = "Speler 2 naam";
             // 
             // label7
             // 
@@ -479,8 +479,8 @@ namespace DobbelSpellen
             this.Controls.Add(this.label9);
             this.Controls.Add(this.tbRondes);
             this.Controls.Add(this.btnGa);
-            this.Controls.Add(this.groupBox4);
-            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.gbSpeler2);
+            this.Controls.Add(this.gbPlayer1);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -491,14 +491,14 @@ namespace DobbelSpellen
             this.groupBox1.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            this.gbPlayer1.ResumeLayout(false);
+            this.gbPlayer1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pb4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb1)).EndInit();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
+            this.gbSpeler2.ResumeLayout(false);
+            this.gbSpeler2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbOnder4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbOnder3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbOnder2)).EndInit();
@@ -525,7 +525,7 @@ namespace DobbelSpellen
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.TextBox tbNaam2;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox gbPlayer1;
         private System.Windows.Forms.TextBox tbPunten;
         private System.Windows.Forms.ComboBox cmbBonus;
         private System.Windows.Forms.PictureBox pb4;
@@ -535,7 +535,7 @@ namespace DobbelSpellen
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ListBox lbpuntentelling;
-        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.GroupBox gbSpeler2;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ListBox lbOnderpuntentelling;

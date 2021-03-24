@@ -37,11 +37,11 @@ namespace DobbelSpellen
 
         private int totaal2 = 0;
 
-        private string errorImagePath= ""; 
+        private string errorImagePath = "";
 
         private string playerOneImagePath = "";
 
-        private string playerTwoImagePath ="";
+        private string playerTwoImagePath = "";
 
         private int x = 0;
 
@@ -51,14 +51,14 @@ namespace DobbelSpellen
         {
             // de GetPath verkrijgt het pad naar de photo map
             GetPath();
-            
+
             InitializeComponent();
 
             // de start methode geeft de combobox values
             start();
         }
 
-       // hier staan de methodes voor de hele form
+        // hier staan de methodes voor de hele form
         #region Methodes
 
         /// <summary>
@@ -69,13 +69,13 @@ namespace DobbelSpellen
             path = Application.StartupPath;
             path = path.Substring(0, path.Length - 9);
             path += "photo\\dice_";
-            errorImagePath =(path + "cross" + ".jpg");
-            
+            errorImagePath = (path + "cross" + ".jpg");
+
         }
 
-        
 
-   
+
+
         /// <summary>
         /// hier maak ik de random getallen
         /// </summary>
@@ -95,6 +95,7 @@ namespace DobbelSpellen
         {
             try
             {
+
                 // dit opent de folder zodat je een file kan selecteren
                 OpenFileDialog pathTo = new OpenFileDialog();
                 // je kan hier alleen jpgs jpegs en pngs gebruiken
@@ -105,13 +106,13 @@ namespace DobbelSpellen
 
                 if (pathTo.ShowDialog() == DialogResult.OK)
                 {
-                     playerOneImagePath = pathTo.FileName;
+                    playerOneImagePath = pathTo.FileName;
                 }
                 // deze if kan nooit fout gaan want je kan namelijk alleen maar fotos selecteren
 
             }
-            catch (OperationCanceledException) { pbWinaar.Image = Image.FromFile(errorImagePath);}
-            catch (Exception ex) { MessageBox.Show(ex.Message);}
+            catch (Exception) { pbWinaar.Image = Image.FromFile(errorImagePath); }
+
         }
 
         /// <summary>
@@ -136,8 +137,8 @@ namespace DobbelSpellen
                 // deze if kan nooit fout gaan want je kan namelijk alleen maar fotos selecteren
 
             }
-            catch (OperationCanceledException) { pbWinaar.Image = Image.FromFile(errorImagePath); }
-            catch (Exception ex) { MessageBox.Show(ex.Message); }
+            catch (Exception) { pbWinaar.Image = Image.FromFile(errorImagePath); }
+
         }
 
 
@@ -146,9 +147,9 @@ namespace DobbelSpellen
         /// </summary>
         public void start()
         {
-            for(int i = 0; i < 6; i++)
+            for (int i = 0; i < 6; i++)
             {
-                getallen[i] = i+1;
+                getallen[i] = i + 1;
                 cbOnderBonus.Items.Add(getallen[i]);
                 cmbBonus.Items.Add(getallen[i]);
             }
@@ -174,10 +175,10 @@ namespace DobbelSpellen
         /// </summary>
         private void bonus()
         {
-            int bonussp2 = cbOnderBonus.SelectedIndex +1;
-            int bonussp1 = cmbBonus.SelectedIndex +1;
-            
-              
+            int bonussp2 = cbOnderBonus.SelectedIndex + 1;
+            int bonussp1 = cmbBonus.SelectedIndex + 1;
+
+
             for (int i = 0; i <= 4; i++)
             {
                 if (bonussp1 == getallen[i]) { bonus1++; }
@@ -240,6 +241,9 @@ namespace DobbelSpellen
                     bonus1 = 0;
                     bonus2 = 0;
                     x = 0;
+                    // dit maakt de listbox leeg
+                    lbpuntentelling.Items.Clear();
+                    lbOnderpuntentelling.Items.Clear();
                 }
             }
             else
@@ -249,8 +253,9 @@ namespace DobbelSpellen
 
         }
 
-        private void tekstMaken() {
-           
+        private void tekstMaken()
+        {
+
 
         }
         #endregion
@@ -277,10 +282,9 @@ namespace DobbelSpellen
         {
             try
             {
-                groupBox4.Text = tbNaam2.Text;
-                lbpuntentelling.Items.Add("Spel overzicht van: " + tbNaam2.Text);
-               
-                this.btnGa.Enabled = true;
+                gbSpeler2.Text = tbNaam2.Text;
+                lbOnderpuntentelling.Items.Add("Spel overzicht van: " + tbNaam2.Text);
+
 
             }
             catch (Exception ex) { MessageBox.Show(ex.Message); }
@@ -289,8 +293,8 @@ namespace DobbelSpellen
         {
             try
             {
-                groupBox2.Text = tbNaam.Text;
-                lbOnderpuntentelling.Items.Add("Spel overzicht van: " + tbNaam.Text);
+                gbPlayer1.Text = tbNaam.Text;
+                lbpuntentelling.Items.Add("Spel overzicht van: " + tbNaam.Text);
 
             }
             catch (Exception ex) { MessageBox.Show(ex.Message); }
@@ -302,7 +306,7 @@ namespace DobbelSpellen
             pb1.Image = Image.FromFile(path + "1.jpg");
             pb2.Image = Image.FromFile(path + "2.jpg");
             pb3.Image = Image.FromFile(path + "3.jpg");
-            pb4.Image = Image.FromFile(path + "4.jpg");     
+            pb4.Image = Image.FromFile(path + "4.jpg");
             pbOnder1.Image = Image.FromFile(path + "3.jpg");
             pbOnder2.Image = Image.FromFile(path + "4.jpg");
             pbOnder3.Image = Image.FromFile(path + "5.jpg");
@@ -321,16 +325,16 @@ namespace DobbelSpellen
                 bonus();
                 totaalpunten();
                 tekstMaken();
-              
+
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
-           
+
         }
 
-        #region Listbox Clear
+        #region Naam check 
         /// <summary>
         /// Dit maakt de listbox leeg als je de text vervangen
         /// </summary>
@@ -338,23 +342,15 @@ namespace DobbelSpellen
         /// <param name="e"></param>
         private void tbNaam_TextChanged(object sender, EventArgs e)
         {
-            // dit maakt de listbox leeg
-            lbpuntentelling.Items.Clear();
-        }
-
-        /// <summary>
-        /// Dit maakt de listbox leeg als je de text vervangen
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void tbNaam2_TextChanged(object sender, EventArgs e)
-        {
-            // dit maakt de listbox leeg
-            lbOnderpuntentelling.Items.Clear();
+            if (tbNaam.Text != "" & tbNaam2.Text != "" & playerOneImagePath != "" & playerTwoImagePath != "")
+            {
+                this.btnGa.Enabled = true;
+            }
+           
         }
         #endregion
 
         #endregion
- 
+
     }
 }
