@@ -33,9 +33,8 @@ namespace DobbelSpellen
         //dit is de bonus voor speler 2
         private int bonus2 = 0;
 
-        private int totaal1 = 0;
-
-        private int totaal2 = 0;
+        private int ttotaal = 0;
+        private int ttotaal2 = 0;
 
         private string errorImagePath = "";
 
@@ -44,6 +43,10 @@ namespace DobbelSpellen
         private string playerTwoImagePath = "";
 
         private int x = 0;
+
+        private DateTime nu ;
+
+        private DateTime recent;
 
         #endregion
 
@@ -153,6 +156,7 @@ namespace DobbelSpellen
                 cbOnderBonus.Items.Add(getallen[i]);
                 cmbBonus.Items.Add(getallen[i]);
             }
+           
         }
 
         /// <summary>
@@ -207,31 +211,45 @@ namespace DobbelSpellen
             {
                 som2 += getallen[i];
             };
+        
             int totaal1 = som1 + bonus1;
             int totaal2 = som2 + bonus2;
+            ttotaal += totaal1;
+            ttotaal2 += totaal2;
+
             tbPunten.Text = totaal1.ToString();
             tbOnderPunten.Text = totaal2.ToString();
-
+            lbpuntentelling.Items.Add("Bonus: " +bonus1 + " " + (totaal1 - bonus1) + " " + totaal1);
+            lbOnderpuntentelling.Items.Add("Bonus: " +bonus2 + " " + (totaal2 - bonus2) + " " + totaal2);
+            
             if (x == 3)
             {
                 try
                 {
-                    if (totaal1 > totaal2)
+                   
+                    if (ttotaal > ttotaal2)
                     {
+                        recent = DateTime.Now;
                         lbWinnaar.Items.Clear();
                         pbWinaar.Image = Image.FromFile(playerOneImagePath);
-                        lbWinnaar.Items.Add("winnaar: " + tbNaam.Text);
-                        lbWinnaar.Items.Add("Geboortedatum: " + dateTimePicker1.Value);
-                        lbWinnaar.Items.Add("Gewonnen met " + (totaal1 - totaal2) + " punten verschil");
+                        lbWinnaar.Items.Add("winnaar: " + tbNaam.Text  + "\r\n");
+                        lbWinnaar.Items.Add("Geboortedatum: " + dateTimePicker1.Value + "\r\n");
+                        lbWinnaar.Items.Add("Gewonnen met " + (ttotaal - ttotaal2) + " punten verschil" + "\r\n");
+                        lbWinnaar.Items.Add("Speeltijd: " +(recent - nu) + "\r\n");
+                        lbOnderpuntentelling.Items.Add("Totaal punten: " + ttotaal2);
+                        lbpuntentelling.Items.Add("Totaal punten: " + ttotaal);
 
                     }
-                    else if (totaal2 > totaal1)
+                    else if (ttotaal2 > ttotaal)
                     {
                         lbWinnaar.Items.Clear();
                         pbWinaar.Image = Image.FromFile(playerTwoImagePath);
-                        lbWinnaar.Items.Add("winnaar: " + tbNaam2.Text);
-                        lbWinnaar.Items.Add("Geboortedatum: " + dateTimePicker2.Value);
-                        lbWinnaar.Items.Add("Gewonnen met " + (totaal2 - totaal1) + " punten verschil");
+                        lbWinnaar.Items.Add("winnaar: " + tbNaam2.Text + "\r\n");
+                        lbWinnaar.Items.Add("Geboortedatum: " + dateTimePicker2.Value + "\r\n");
+                        lbWinnaar.Items.Add("Gewonnen met " + (ttotaal2 - ttotaal) + " punten verschil" + "\r\n");
+                        lbWinnaar.Items.Add("Speeltijd: " + (recent - nu) + "\r\n");
+                        lbOnderpuntentelling.Items.Add("Totaal punten: " + ttotaal2);
+                        lbpuntentelling.Items.Add("Totaal punten: " + ttotaal);
                     };
                 }
                 finally //  hier zet ik alles op 0 zodat je weer opnieuw kan beginnen
@@ -241,9 +259,8 @@ namespace DobbelSpellen
                     bonus1 = 0;
                     bonus2 = 0;
                     x = 0;
-                    // dit maakt de listbox leeg
-                    lbpuntentelling.Items.Clear();
-                    lbOnderpuntentelling.Items.Clear();
+                    ttotaal = 0;
+                    ttotaal2 = 0;
                 }
             }
             else
@@ -253,11 +270,7 @@ namespace DobbelSpellen
 
         }
 
-        private void tekstMaken()
-        {
-
-
-        }
+     
         #endregion
 
 
@@ -282,8 +295,11 @@ namespace DobbelSpellen
         {
             try
             {
+               
+                lbOnderpuntentelling.Items.Clear();
                 gbSpeler2.Text = tbNaam2.Text;
                 lbOnderpuntentelling.Items.Add("Spel overzicht van: " + tbNaam2.Text);
+                lbOnderpuntentelling.Items.Add("Bonus:   Ogen:   Totaal:");
 
 
             }
@@ -293,8 +309,10 @@ namespace DobbelSpellen
         {
             try
             {
+                lbpuntentelling.Items.Clear();
                 gbPlayer1.Text = tbNaam.Text;
                 lbpuntentelling.Items.Add("Spel overzicht van: " + tbNaam.Text);
+                lbpuntentelling.Items.Add("Bonus:   Ogen:   Totaal:");
 
             }
             catch (Exception ex) { MessageBox.Show(ex.Message); }
@@ -311,6 +329,7 @@ namespace DobbelSpellen
             pbOnder2.Image = Image.FromFile(path + "4.jpg");
             pbOnder3.Image = Image.FromFile(path + "5.jpg");
             pbOnder4.Image = Image.FromFile(path + "6.jpg");
+            nu = DateTime.Now;
 
         }
         #endregion
@@ -324,7 +343,7 @@ namespace DobbelSpellen
                 tbRondes.Text = rondes++.ToString();
                 bonus();
                 totaalpunten();
-                tekstMaken();
+                
 
             }
             catch (Exception ex)
