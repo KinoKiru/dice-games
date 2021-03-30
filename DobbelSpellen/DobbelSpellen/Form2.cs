@@ -19,21 +19,50 @@ namespace DobbelSpellen
             InitializeComponent();
         }
 
+        #region Methods
         private void button1_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(textBoxField.Text))
-            MessageBox.Show("Er is wat mis gegaan met de gegevens");
-            return;
+            if (string.IsNullOrWhiteSpace(tbNaam1.Text))
+            {
+                MessageBox.Show("Er is wat mis gegaan met de gegevens");
+            }
+            else
+            {
+                btnStart.Enabled = false;
+                btnspeel.Enabled = true;
+            }
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            btnSelecteerFoto1.Image = Image.FromFile(@".png");
+            OpenFileDialog open = new OpenFileDialog();
+            open.Filter = "Image Files(*.jpg; *.jpeg; *.gif; *.bmp)|*.jpg; *.jpeg; *.gif; *.bmp";
+            if (open.ShowDialog() == DialogResult.OK)
+            {
+                picSpeler.Image = new Bitmap(open.FileName);
+            }
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            btnSelecteerFoto2.Image = Image.FromFile(@".png");
+            OpenFileDialog open = new OpenFileDialog();
+            open.Filter = "Image Files(*.jpg; *.jpeg; *.gif; *.bmp)|*.jpg; *.jpeg; *.gif; *.bmp";
+            if (open.ShowDialog() == DialogResult.OK)
+            {
+                picSpeler.Image = new Bitmap(open.FileName);
+            }
         }
+        
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            
+        }
+        #endregion
     }
 }

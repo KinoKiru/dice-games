@@ -45,7 +45,7 @@ namespace DobbelSpellen
             this.tbNaam2 = new System.Windows.Forms.TextBox();
             this.btnStart = new System.Windows.Forms.Button();
             this.btnNieuwSpel = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
+            this.btnspeel = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.picSpeler = new System.Windows.Forms.PictureBox();
@@ -205,14 +205,16 @@ namespace DobbelSpellen
             this.btnNieuwSpel.Text = "Nieuw Spel";
             this.btnNieuwSpel.UseVisualStyleBackColor = true;
             // 
-            // button7
+            // btnspeel
             // 
-            this.button7.Location = new System.Drawing.Point(428, 411);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(181, 23);
-            this.button7.TabIndex = 8;
-            this.button7.Text = "Speel";
-            this.button7.UseVisualStyleBackColor = true;
+            this.btnspeel.Enabled = false;
+            this.btnspeel.Location = new System.Drawing.Point(428, 411);
+            this.btnspeel.Name = "btnspeel";
+            this.btnspeel.Size = new System.Drawing.Size(181, 23);
+            this.btnspeel.TabIndex = 8;
+            this.btnspeel.Text = "Speel";
+            this.btnspeel.UseVisualStyleBackColor = true;
+            this.btnspeel.Click += new System.EventHandler(this.button7_Click);
             // 
             // label5
             // 
@@ -232,6 +234,7 @@ namespace DobbelSpellen
             this.checkBox1.TabIndex = 10;
             this.checkBox1.Text = "Actief";
             this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // picSpeler
             // 
@@ -249,7 +252,7 @@ namespace DobbelSpellen
             this.Controls.Add(this.picSpeler);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.button7);
+            this.Controls.Add(this.btnspeel);
             this.Controls.Add(this.btnNieuwSpel);
             this.Controls.Add(this.btnStart);
             this.Controls.Add(this.groupBox2);
@@ -284,7 +287,7 @@ namespace DobbelSpellen
         private System.Windows.Forms.Button btnSelecteerFoto2;
         private System.Windows.Forms.DateTimePicker dtpGeboorteDatum2;
         private System.Windows.Forms.TextBox tbNaam2;
-        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button btnspeel;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.PictureBox picSpeler;
