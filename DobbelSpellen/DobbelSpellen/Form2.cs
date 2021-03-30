@@ -21,16 +21,9 @@ namespace DobbelSpellen
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Random rmd = new Random();
-            int randomfoto = rmd.Next(1, 3);
-            if(randomfoto == 1)
-            {
-                picSpeler.Image = Foto1;
-            }
-            else
-            {
-                picSpeler.Image = Foto2;
-            }
+            if (string.IsNullOrWhiteSpace(textBoxField.Text))
+            MessageBox.Show("Er is wat mis gegaan met de gegevens");
+            return;
         }
 
         private void button3_Click(object sender, EventArgs e)
