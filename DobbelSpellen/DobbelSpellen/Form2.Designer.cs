@@ -109,6 +109,7 @@ namespace DobbelSpellen
             this.button4.TabIndex = 1;
             this.button4.Text = "Opslaan";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // btnSelecteerFoto1
             // 
@@ -161,6 +162,7 @@ namespace DobbelSpellen
             this.button6.TabIndex = 4;
             this.button6.Text = "Opslaan";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // btnSelecteerFoto2
             // 

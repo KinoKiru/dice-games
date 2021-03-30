@@ -22,7 +22,7 @@ namespace DobbelSpellen
         #region Methods
         private void button1_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(tbNaam1.Text))
+            if (string.IsNullOrWhiteSpace(tbNaam1.Text, tbNaam2.Text))
             {
                 MessageBox.Show("Er is wat mis gegaan met de gegevens");
             }
@@ -62,6 +62,16 @@ namespace DobbelSpellen
         private void checkBox1_CheckedChanged(object sender, EventArgs e)
         {
             
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            if (dtpGeboorteDatum1.Year > DateTime.Now.Year - 100 && tbNaam1.Text != "" && Foto1 != null);
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            if (dtpGeboorteDatum2.Year > DateTime.Now.Year - 100 && tbNaam2.Text != "" && Foto1 != null);
         }
         #endregion
     }
