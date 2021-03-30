@@ -19,8 +19,9 @@ namespace DobbelSpellen
         //global variable
         private string path;
 
-        //Array met 6 indexnummers
-        private int[] getallen = new int[8];
+        //Array met 4 indexnummers
+        private int[] spelerEenPunten = new int[4];
+        private int[] spelerTweePunten = new int[4];
 
         //Randomizer
         private Random objRandom = new Random();
@@ -33,20 +34,30 @@ namespace DobbelSpellen
         //dit is de bonus voor speler 2
         private int bonus2 = 0;
 
-        private int ttotaal = 0;
-        private int ttotaal2 = 0;
+        // dit berekend de totaal waarde uit met de bonus
+        private int totaalPuntenVierRondesSpeler1 = 0;
+        private int totaalPuntenVierrondesSpeler2 = 0;
 
+        // als er toch iets fout gaat is dit de path voor de error
         private string errorImagePath = "";
 
+        //dit is is de path voor de eerste player
         private string playerOneImagePath = "";
 
+        //dit is de path voor de tweede player
         private string playerTwoImagePath = "";
 
         private int x = 0;
 
-        private DateTime nu ;
+        // dit pakt de tijd als je hem opstart
+        private DateTime nu;
 
+        //als je de 4 rondes heb gehad pakt hij de tijd
         private DateTime recent;
+
+        // deze bools gaan pas op true als alle info is ingevuld
+        private bool spelerEenCheck = false;
+        private bool spelerTweeCheck = false;
 
         #endregion
 
@@ -84,17 +95,17 @@ namespace DobbelSpellen
         /// </summary>
         public void PullRandomNumbers()
         {
-            for (int i = 0; i < getallen.Length; i++)
+            for (int i = 0; i < 4; i++)
             {
-                getallen[i] = objRandom.Next(1, 7); //Trekt getallen van 1 tot en met 6
-
+                spelerEenPunten[i] = objRandom.Next(1, 7); //Trekt getallen van 1 tot en met 6
+                spelerTweePunten[i] = objRandom.Next(1, 7); // 
             }
         }
 
         /// <summary>
         /// als speler 1 wint dan kont zijn fot tevoren via deze methode
         /// </summary>
-        public void SelecteerFotos()
+        public void VerkrijgFotoSpelereen()
         {
             try
             {
@@ -121,7 +132,7 @@ namespace DobbelSpellen
         /// <summary>
         /// Als speler 2 wint dan word zo de foto getoond 
         /// </summary>
-        public void SelecteerFotos2()
+        public void VerkrijgFotoSpelerTwee()
         {
             try
             {
@@ -152,11 +163,11 @@ namespace DobbelSpellen
         {
             for (int i = 0; i < 6; i++)
             {
-                getallen[i] = i + 1;
-                cbOnderBonus.Items.Add(getallen[i]);
-                cmbBonus.Items.Add(getallen[i]);
+                // hier voeg ik de keuzes toe
+                cbOnderBonus.Items.Add(i + 1);
+                cmbBonus.Items.Add(i + 1);
             }
-           
+
         }
 
         /// <summary>
@@ -164,113 +175,111 @@ namespace DobbelSpellen
         /// </summary>
         private void ShowDices()
         {
-            pb1.Image = Image.FromFile(path + getallen[0] + ".jpg");
-            pb2.Image = Image.FromFile(path + getallen[1] + ".jpg");
-            pb3.Image = Image.FromFile(path + getallen[2] + ".jpg");
-            pb4.Image = Image.FromFile(path + getallen[3] + ".jpg");
-            pbOnder1.Image = Image.FromFile(path + getallen[4] + ".jpg");
-            pbOnder2.Image = Image.FromFile(path + getallen[5] + ".jpg");
-            pbOnder3.Image = Image.FromFile(path + getallen[6] + ".jpg");
-            pbOnder4.Image = Image.FromFile(path + getallen[7] + ".jpg");
+            // hier pak ik de path naar de foto map, en dan pak ik de value van de array punt en dan gooi ik die in de text box
+            pb1.Image = Image.FromFile(path + spelerEenPunten[0] + ".jpg");
+            pb2.Image = Image.FromFile(path + spelerEenPunten[1] + ".jpg");
+            pb3.Image = Image.FromFile(path + spelerEenPunten[2] + ".jpg");
+            pb4.Image = Image.FromFile(path + spelerEenPunten[3] + ".jpg");
+            pbOnder1.Image = Image.FromFile(path + spelerTweePunten[0] + ".jpg");
+            pbOnder2.Image = Image.FromFile(path + spelerTweePunten[1] + ".jpg");
+            pbOnder3.Image = Image.FromFile(path + spelerTweePunten[2] + ".jpg");
+            pbOnder4.Image = Image.FromFile(path + spelerTweePunten[3] + ".jpg");
         }
 
         /// <summary>
         /// hier bereken ik de bonus door na te gaan of de getallen overeen komen
         /// </summary>
-        private void bonus()
+        private void BerekenBonus()
         {
             int bonussp2 = cbOnderBonus.SelectedIndex + 1;
             int bonussp1 = cmbBonus.SelectedIndex + 1;
 
 
-            for (int i = 0; i <= 4; i++)
+            for (int i = 0; i < spelerEenPunten.Length; i++)
             {
-                if (bonussp1 == getallen[i]) { bonus1++; }
-            };
-
-            for (int i = 4; i < 8; i++)
-            {
-                if (bonussp2 == getallen[i]) { bonus2++; }
+                // hier vergelijk ik je keuze voor je bonus met je dobbel
+                if (bonussp1 == spelerEenPunten[i]) { bonus1++; } else if (bonussp2 == spelerTweePunten[i]) { bonus2++; }
             };
         }
 
         /// <summary>
-        /// dit telt alle punten op en laat vervolgens de winnaar zien
+        /// dit telt alle punten op(bonus + wat je gedobbelt hebt) en laat vervolgens de winnaar zien
         /// </summary>
-        private void totaalpunten()
+        private void BerekenTotaalPunten()
         {
             int som1 = 0;
             int som2 = 0;
 
-            for (int i = 0; i < 4; i++)
+            for (int i = 0; i < spelerEenPunten.Length; i++)
             {
-                som1 += getallen[i];
+                som1 += spelerEenPunten[i];
+                som2 += spelerTweePunten[i];
             };
 
-            for (int i = 4; i < 8; i++)
-            {
-                som2 += getallen[i];
-            };
-        
+            // dit is voor 1 ronde wat je bij elkaar optelt
             int totaal1 = som1 + bonus1;
             int totaal2 = som2 + bonus2;
-            ttotaal += totaal1;
-            ttotaal2 += totaal2;
+            // hier doe ik het += zodat je de 4 rondes bij elkaar optelt
+            totaalPuntenVierRondesSpeler1 += totaal1;
+            totaalPuntenVierrondesSpeler2 += totaal2;
 
             tbPunten.Text = totaal1.ToString();
             tbOnderPunten.Text = totaal2.ToString();
-            lbpuntentelling.Items.Add("Bonus: " +bonus1 + " " + (totaal1 - bonus1) + " " + totaal1);
-            lbOnderpuntentelling.Items.Add("Bonus: " +bonus2 + " " + (totaal2 - bonus2) + " " + totaal2);
-            
+            // hier voeg ik de punten toe van 1 ronde 
+            lbpuntentelling.Items.Add("Bonus: " + bonus1 + " " + (totaal1 - bonus1) + " " + totaal1);
+            lbOnderpuntentelling.Items.Add("Bonus: " + bonus2 + " " + (totaal2 - bonus2) + " " + totaal2);
+
             if (x == 3)
             {
                 try
                 {
-                   
-                    if (ttotaal > ttotaal2)
+                    TimeSpan totaaltime = recent - nu;
+                    // als de punten hoger zijn van speler 1 dan laat hij de totaal score zien van de 4 rondes en de punten verschil daarvan 
+                    if (totaalPuntenVierRondesSpeler1 > totaalPuntenVierrondesSpeler2)
                     {
                         recent = DateTime.Now;
                         lbWinnaar.Items.Clear();
                         pbWinaar.Image = Image.FromFile(playerOneImagePath);
-                        lbWinnaar.Items.Add("winnaar: " + tbNaam.Text  + "\r\n");
+                        lbWinnaar.Items.Add("winnaar: " + tbNaam.Text + "\r\n");
                         lbWinnaar.Items.Add("Geboortedatum: " + dateTimePicker1.Value + "\r\n");
-                        lbWinnaar.Items.Add("Gewonnen met " + (ttotaal - ttotaal2) + " punten verschil" + "\r\n");
-                        lbWinnaar.Items.Add("Speeltijd: " +(recent - nu) + "\r\n");
-                        lbOnderpuntentelling.Items.Add("Totaal punten: " + ttotaal2);
-                        lbpuntentelling.Items.Add("Totaal punten: " + ttotaal);
+                        lbWinnaar.Items.Add("Gewonnen met " + (totaalPuntenVierRondesSpeler1 - totaalPuntenVierrondesSpeler2) + " punten verschil" + "\r\n");
+                        lbWinnaar.Items.Add("Speeltijd: " + totaaltime + "\r\n");
+                        lbOnderpuntentelling.Items.Add("Totaal punten: " + totaalPuntenVierrondesSpeler2);
+                        lbpuntentelling.Items.Add("Totaal punten: " + totaalPuntenVierRondesSpeler1);
 
                     }
-                    else if (ttotaal2 > ttotaal)
+                    else if (totaalPuntenVierrondesSpeler2 > totaalPuntenVierRondesSpeler1)
                     {
                         lbWinnaar.Items.Clear();
                         pbWinaar.Image = Image.FromFile(playerTwoImagePath);
                         lbWinnaar.Items.Add("winnaar: " + tbNaam2.Text + "\r\n");
                         lbWinnaar.Items.Add("Geboortedatum: " + dateTimePicker2.Value + "\r\n");
-                        lbWinnaar.Items.Add("Gewonnen met " + (ttotaal2 - ttotaal) + " punten verschil" + "\r\n");
-                        lbWinnaar.Items.Add("Speeltijd: " + (recent - nu) + "\r\n");
-                        lbOnderpuntentelling.Items.Add("Totaal punten: " + ttotaal2);
-                        lbpuntentelling.Items.Add("Totaal punten: " + ttotaal);
+                        lbWinnaar.Items.Add("Gewonnen met " + (totaalPuntenVierrondesSpeler2 - totaalPuntenVierRondesSpeler1) + " punten verschil" + "\r\n");
+                        lbWinnaar.Items.Add("Speeltijd: " + totaaltime + "\r\n");
+                        lbOnderpuntentelling.Items.Add("Totaal punten: " + totaalPuntenVierrondesSpeler2);
+                        lbpuntentelling.Items.Add("Totaal punten: " + totaalPuntenVierRondesSpeler1);
                     };
                 }
                 finally //  hier zet ik alles op 0 zodat je weer opnieuw kan beginnen
                 {
                     totaal1 = 0;
                     totaal2 = 0;
-                    bonus1 = 0;
-                    bonus2 = 0;
+                   
                     x = 0;
-                    ttotaal = 0;
-                    ttotaal2 = 0;
+                    totaalPuntenVierRondesSpeler1 = 0;
+                    totaalPuntenVierrondesSpeler2 = 0;
                 }
             }
             else
             {// als je nog geen 5 rondjes hebt gedaan gaat de counter met 1 omhoog
                 x++;
+                bonus1 = 0;
+                bonus2 = 0;
             }
 
         }
 
-     
+
         #endregion
 
 
@@ -283,11 +292,11 @@ namespace DobbelSpellen
         #region Foto selectieknop
         private void tbSelecteer_Click(object sender, EventArgs e)
         {
-            SelecteerFotos();
+            VerkrijgFotoSpelereen();
         }
         private void btnSelecteer2_Click(object sender, EventArgs e)
         {
-            SelecteerFotos2();
+            VerkrijgFotoSpelerTwee();
         }
         #endregion
         #region data opslaan
@@ -295,11 +304,14 @@ namespace DobbelSpellen
         {
             try
             {
-               
+                if (tbNaam2.Text != "" & playerTwoImagePath != "")
+                {
+                    spelerTweeCheck = true;
+                }
+
                 lbOnderpuntentelling.Items.Clear();
-                gbSpeler2.Text = tbNaam2.Text;
-                lbOnderpuntentelling.Items.Add("Spel overzicht van: " + tbNaam2.Text);
-                lbOnderpuntentelling.Items.Add("Bonus:   Ogen:   Totaal:");
+               
+
 
 
             }
@@ -309,18 +321,18 @@ namespace DobbelSpellen
         {
             try
             {
-                lbpuntentelling.Items.Clear();
-                gbPlayer1.Text = tbNaam.Text;
-                lbpuntentelling.Items.Add("Spel overzicht van: " + tbNaam.Text);
-                lbpuntentelling.Items.Add("Bonus:   Ogen:   Totaal:");
+                if (tbNaam.Text != "" & playerOneImagePath != "") { spelerEenCheck = true; }
 
+
+                lbpuntentelling.Items.Clear();
+                
             }
             catch (Exception ex) { MessageBox.Show(ex.Message); }
         }
         #endregion
         #region Vul picturebox
         private void Form4_Load(object sender, EventArgs e)
-        {
+        { // dit vult de pictureboxen met de mogelijkheden van de dobbelstenen
             pb1.Image = Image.FromFile(path + "1.jpg");
             pb2.Image = Image.FromFile(path + "2.jpg");
             pb3.Image = Image.FromFile(path + "3.jpg");
@@ -330,7 +342,6 @@ namespace DobbelSpellen
             pbOnder3.Image = Image.FromFile(path + "5.jpg");
             pbOnder4.Image = Image.FromFile(path + "6.jpg");
             nu = DateTime.Now;
-
         }
         #endregion
 
@@ -341,9 +352,9 @@ namespace DobbelSpellen
                 PullRandomNumbers();
                 ShowDices();
                 tbRondes.Text = rondes++.ToString();
-                bonus();
-                totaalpunten();
-                
+                BerekenBonus();
+                BerekenTotaalPunten();
+
 
             }
             catch (Exception ex)
@@ -353,23 +364,31 @@ namespace DobbelSpellen
 
         }
 
-        #region Naam check 
-        /// <summary>
-        /// Dit maakt de listbox leeg als je de text vervangen
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void tbNaam_TextChanged(object sender, EventArgs e)
+        private void btnCheck_Click(object sender, EventArgs e)
         {
-            if (tbNaam.Text != "" & tbNaam2.Text != "" & playerOneImagePath != "" & playerTwoImagePath != "")
+            // als alles is ingevuld dan kan je pas verder hier pas hij ook toe wat je hebt opgeslagen 
+            if (spelerEenCheck == true & spelerTweeCheck == true)
             {
-                this.btnGa.Enabled = true;
+                gbSpeler2.Text = tbNaam2.Text;
+                gbPlayer1.Text = tbNaam.Text;
+                lbpuntentelling.Items.Add("Spel overzicht van: " + tbNaam.Text);
+                lbpuntentelling.Items.Add("Bonus:   Ogen:   Totaal:");
+                lbOnderpuntentelling.Items.Add("Spel overzicht van: " + tbNaam2.Text);
+                lbOnderpuntentelling.Items.Add("Bonus:   Ogen:   Totaal:");
+                btnGa.Enabled = true;
             }
-           
+            // als bijde spelers info missen krijg je eenb foutmelding
+            else if (spelerTweeCheck == false & spelerEenCheck == false) { MessageBox.Show("Gelieve vul alle info in voor Allebei de spelers"); }
+            // als speler 1 info mist dan krijg je een melding
+            else if (spelerEenCheck == false)
+            {
+                MessageBox.Show("Gelieve vul alle info in voor speler een");
+            }// als speler 2 info mist krijg je een melding
+            else if (spelerTweeCheck == false)
+            {
+                MessageBox.Show("Gelieve vul alle info in voor speler twee");
+            } 
         }
         #endregion
-
-        #endregion
-
     }
 }

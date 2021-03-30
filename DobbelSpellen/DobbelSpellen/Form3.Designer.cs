@@ -218,7 +218,7 @@ namespace DobbelSpellen
             this.btnComputerfoto.TabIndex = 17;
             this.btnComputerfoto.Text = "Open Computer Foto";
             this.btnComputerfoto.UseVisualStyleBackColor = true;
-            this.btnComputerfoto.Click += new System.EventHandler(this.btnComputerfoto_Click);
+  
             // 
             // btnSpelerfoto
             // 
@@ -229,7 +229,7 @@ namespace DobbelSpellen
             this.btnSpelerfoto.TabIndex = 16;
             this.btnSpelerfoto.Text = "Open speler foto";
             this.btnSpelerfoto.UseVisualStyleBackColor = true;
-            this.btnSpelerfoto.Click += new System.EventHandler(this.btnSpelerfoto_Click);
+
             // 
             // tbDag
             // 
@@ -379,7 +379,7 @@ namespace DobbelSpellen
             this.btnGooi.TabIndex = 9;
             this.btnGooi.Text = "Gooi";
             this.btnGooi.UseVisualStyleBackColor = true;
-            this.btnGooi.Click += new System.EventHandler(this.btnGooi_Click);
+
             // 
             // lblComputer
             // 
@@ -418,7 +418,7 @@ namespace DobbelSpellen
             this.tbPuntenComputer.ReadOnly = true;
             this.tbPuntenComputer.Size = new System.Drawing.Size(117, 22);
             this.tbPuntenComputer.TabIndex = 13;
-            this.tbPuntenComputer.TextChanged += new System.EventHandler(this.tbPuntenComputer_TextChanged);
+    
             // 
             // lblWinnaar
             // 
