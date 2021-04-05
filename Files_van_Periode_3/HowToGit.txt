@@ -1,0 +1,27 @@
+// begin project
+1. maak het project/repo aan in github.
+2. maak een gitignore(kan standaard in github/DevOps) Kies de juiste IDE zodat je geen Fucky Wucky krijgt.
+3. Voeg team explorer toe, te vinden onder (View -> teamexplorer)Hier zit ook git change in.
+4. clone repository naar de editor
+
+// push en pull
+1. git pull van branch develop ELKE DAG VOORDAT JE BEGINT  (jij kut kind).
+2. Maak je opdracht/taak.
+3. Einde van de dag Pushen naar de branch waar je bezig op bent, ook als het niet werkt(Je slaat dit dus Online op zodat anderen je werk kunnen zien).
+4. NOOIT pushen naar develop.(Je kan wel Pull request doen,technisch gezien kan je wel pusshen maar dit doe je niet omdat je dan kans hebt Develop kapot te maken)
+5. Altijd een Merge Request aanvraagen op develop (In github) en laten goedkeuren door een andere retard.
+6. Als een opdracht (dobbelen op 21) klaar is en ook stable is, Dan pas een Merge request aanvragen en dan laten goedkeuren.
+(develop is een Buffer branch zodat je niet gelijk naar de main merged).
+
+// Elke keer als je bezig gaat met het maken van een feature moet je altijd het volgende doen.
+1. Push elke keer als je iets gedaan hebt. zoals een functie schrijven of iets stukje form compleet gemaakt.
+Dit is zodat als er ooit wat mis kan gaan je altijd een backup hebt van waar je mee bezig was.
+2. Ben je klaar met je feature. maak een pull request aan naar develop.
+Dit is zodat je werk online staat en we nog maals een backup hebben van werkende code.
+
+
+
+
+
+
+Dank aan Luuk Hamming voor het helpen met github en deze how to

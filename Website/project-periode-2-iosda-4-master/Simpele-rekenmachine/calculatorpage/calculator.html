@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+
+    <title>Calculator</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Pictogrammen -->
+    <link rel="stylesheet" href="../Styles/bootstrap/bootstrap-4.5.3-dist/css/bootstrap.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../Styles/main.css">
+    <link rel="icon" href="../afbeeldingen/HQS_Logo.png">
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60" oncontextmenu="return false">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+
+            </button>
+
+            <a class="navbar-brand" style="padding-top: 7.5px;" href="../index.html"><img
+                    src="../afbeeldingen/HQS_Logo.png" class="Image" alt=""></a>
+
+        </div>
+
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+
+                <li><a href="../index.html#about">OVER ONS</a></li>
+                <li><a href="../index.html#mission">MISSIE</a></li>
+                <li><a href="../index.html#services">WAARDEN</a></li>
+                <li><a href="../index.html#portfolio">PORTFOLIO</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+                <li><a id="date" href="#"></a></li>
+
+                <script>
+
+                    var today = new Date();
+                    var date = today.getDate() + '-' + (today.getMonth() + 1) + '-' + today.getFullYear();
+                    document.getElementById("date").innerHTML = "DATUM: " + date;
+
+                </script>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="jumbotron text-center">
+
+    <h1>Simple Calculator</h1>
+    <p>bekijk hier een geavanceerde rekenmachine en hoe het werkt</p>
+
+</div>
+
+<!-- Container (About) -->
+<div id="about" class="container-fluid text-center">
+    <div class="row a">
+        <div class="col-sm-12 ">
+
+            <h2>over de rekenmachine</h2><br>
+            <h4>Deze rekenmachine is gemaakt door HQS voor het bedrijf IVTN bv.</h4><br>
+            <p>Bij deze rekenmachine kan je plus, min, keer, vermenigvuldigen, wortel, delen en kwadraat invoeren. je
+                kan ook zien de vosmende reeksen zien: fibonacci, even getallen en priemgetallen. </p>
+
+        </div>
+    </div>
+</div>
+
+<div id="mission" class="container-fluid bg-grey">
+    <div class="row">
+        <div class="col-lg-4">
+
+            <span><img src="../afbeeldingen/calculatorul.png" alt="rekenmachine" style="width: 100%; padding-bottom: 100px;" class="img-fluid"></span>
+            <span><img src="../afbeeldingen/calculatorcvb.png" alt="rekenmachine" style="width: 100%" class="img-fluid"></span>
+
+        </div>
+        <div class="col-lg-8">
+
+            <h2>uitleg over calculator</h2><br>
+            <h4><strong>1 tot en met 6:</strong>Bij nummer 1 en 2 kan je een getal invoeren. Bij nummer 6 kan je kiezen
+                wat je wilt hebben, dus wil je keer klik je keer aan en voor de rest geld dat ook.
+                Als je bij nummer 5 op berekenen klikt komt het antwoord bij nummer 3 en de berekening bij nummer 4,
+                druk je op wis dan wordt alles verwijderd en zijn de blokken weer leeg </h4><br>
+            <h4><strong>7 tot en met 9:</strong>Bij nummer 7 kan je kiezen welke reeks je wilt zien. Je kan bij 8
+                aangeven hoe lang je dat wilt hebben. U moet daar wel iets invullen want ander laat hij niks zien.
+                Bij nummer 9 krijg je de geselecteerde reeks te zien. Het is ook mogelijk om meerdere reeksen te laten
+                zien </h4>
+
+        </div>
+    </div>
+</div>
+
+<div id="download" class="container-fluid bg-grey">
+    <div class="row">
+        <div class="col-lg-4">
+
+            <span><img src="../afbeeldingen/calculatorvb.PNG" alt="rekenmachine" width="100%" class="img-fluid"></span>
+
+        </div>
+        <div class="col-lg-8">
+
+            <h2>download </h2><br>
+            <h4><strong>klik hier onder om de rekenmachine te downloaden</strong></h4>
+            <button class="button" id="button" onclick="klikTeller()"><a class="knopWit"
+                                                                           href="Simpele%20rekenmachine.exe">Simple
+                Calculator</a></button>
+            <p id="result">
+                Klik op de knop om te zien hoe vaak dit bestand al is gedownload.
+                <script>
+                    if (document.getElementById("result").innerHTML >= 0) {
+                        document.getElementById("result").innerHTML = "Dit bestand is " + localStorage.clickcount + " keer gedownload";
+                    }
+                </script>
+            </p>
+
+        </div>
+    </div>
+</div>
+
+<!-- Container (Contact) -->
+<div id="contact" class="container-fluid text-center">
+
+    <h2 class="text-center">CONTACT</h2>
+
+    <div class="row">
+        <div class="col-sm-5">
+
+            <p>Contact opnemen?</p>
+            <p><span class="glyphicon glyphicon-map-marker"></span> Almelo, NL</p>
+            <p><span class="glyphicon glyphicon-phone"></span> +31 0646854690</p>
+            <p><span class="glyphicon glyphicon-envelope"></span> 0327746@student.rocvantwente.nl</p>
+
+        </div>
+        <form action="mailto:respons@hqsinternational.org" method="post" enctype="text/plain">
+        <div class="col-sm-7 slideanim">
+            <div class="row">
+                <div class="col-sm-6 form-group">
+
+                    <input class="form-control" id="naam" name="naam" placeholder="Naam" type="text" required>
+
+                </div>
+
+                <div class="col-sm-6 form-group">
+
+                    <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+
+                </div>
+            </div>
+            <textarea class="form-control" id="text" name="text" placeholder="Tekst" rows="5"></textarea><br>
+            <div class="row">
+                <div class="col-sm-12 form-group">
+
+                    <button id="knopje" class="btn  btn-outline-info btn-default pull-right" type="submit">Verstuur</button>
+
+                </div>
+            </div>
+        </div>
+        </form>
+    </div>
+</div>
+
+<footer class="container-fluid text-center">
+
+    <a href="#myPage" title="To Top">
+
+        <span class="glyphicon glyphicon-chevron-up"></span>
+
+    </a>
+
+    <p>Copyright® of High Quality Software 2021</p>
+
+</footer>
+
+<script>
+    $(document).ready(function () {
+        // Add smooth scrolling to all links in navbar + footer link
+        $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 900, function () {
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            } // End if
+        });
+
+        $(window).scroll(function () {
+            $(".slideanim").each(function () {
+                var pos = $(this).offset().top;
+
+                var winTop = $(window).scrollTop();
+                if (pos < winTop + 600) {
+                    $(this).addClass("slide");
+                }
+            });
+        });
+    })
+</script>
+<script>
+    darkMode = localStorage.getItem('darkMode');
+    if (darkMode === 'enabled') {
+        let download = document.getElementById('download');
+download.classList.toggle('darkmodeContainer');
+    }
+</script> <!--script voor de darkmode (dowload gedeelte)-->
+<!-- Bootstrap en jquery files -->
+<script src="../Styles/bootstrap/jquery/jquery-3.5.1.min.js"></script>
+<script src="../Styles/bootstrap/bootstrap-4.5.3-dist/js/bootstrap.js"></script>
+<script src="../Styles/beveiliging%20&%20download%20teller.js"></script>
+<script src="../Styles/darkmode.js"></script>
+</body>
+</html>
