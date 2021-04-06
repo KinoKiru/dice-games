@@ -85,7 +85,7 @@
     </div>
 
     <!-- Mission Button -->
-    <div id="mission" class="container-fluid text-center bg-grey">
+    <div id="mission" class="container-fluid text-center bg-grey p-0">
         <div class="row">
             <div class="col-sm-4">
 
@@ -108,7 +108,7 @@
         </div>
 
         <!-- Container (Services) -->
-        <div id="services" class="container-fluid text-center">
+        <div id="services" class="container-fluid text-center p-0">
 
             <h2>Wat wij belangrijk vinden</h2>
             <br>
@@ -173,17 +173,17 @@
 
 
             <!-- Container (Puppylove) -->
-            <div id="portfolio" class="container-fluid text-center bg-grey">
+            <div id="portfolio" class="container-fluid text-center bg-grey ">
 
                 <h2>Portfolio</h2><br>
                 <h4>Wat wij gemaakt hebben</h4>
 
                 <div class="row text-center slideanim">
-                    <div class="col-sm-4">
+                    <div class="col-sm-3 p-0 m-0">
                         <div class="thumbnail no-decoration"><a href="PuppyLove/index.html">
 
-                            <img src="PuppyLove/Images/PuppyLove.png" style="width: auto; height: auto;" alt="Puppylove"
-                                 width="200" height="200">
+                            <img style="height: 150px; width: 150px;" src="PuppyLove/Images/PuppyLove.png"  alt="Puppylove"
+                                 >
                             <p><strong>PuppyLove</strong></p>
                             <p>Animalfriends Incorporated</p>
 
@@ -191,83 +191,94 @@
                     </div>
 
                     <!-- Container (Simple Calculator) -->
-                    <div class="col-sm-4">
+                    <div class="col-sm-3 p-0 m-0">
                         <div class="thumbnail no-decoration" style="height: 315px;"><a
                                 href="calculatorpage/calculator.html">
 
-                            <img style="width: 200px; height: 200px;" src="afbeeldingen/HQS_Logo.png" alt="Rekenmachine"
-                                 width="auto" height="auto">
+                            <img style="height: 150px; width: 150px;" src="afbeeldingen/HQS_Logo.png" alt="Rekenmachine"
+                                >
                             <p>Rekenmachine</p>
                             <p>High Quality Calculator</p>
 
                         </a></div>
                     </div>
                     <!-- Container (DevOps) -->
-                    <div class="col-sm-4">
+                    <div class="col-sm-3 p-0 m-0">
                         <div class="thumbnail no-decoration" style="height: 315px;"><a target="_blank"
                                                                                        href="https://dev.azure.com/0328026/Project%20Periode%203">
 
-                            <img style="width: 200px; height: 200px;" src="afbeeldingen/dev-ops_logo.png" alt="DevOps"
-                                 width="auto" height="auto">
+                            <img style="height: 150px; width: 150px;" src="afbeeldingen/dev-ops_logo.png" alt="DevOps"
+                                 >
                             <p>DevOps</p>
                             <p>Onze DevOps omgeving</p>
 
                         </a>
 
                         </div>
-                    </div>
-                    <br>
-                </div>
-
-
-                <!-- Container (Contact) -->
-                <div id="contact" class="container-fluid bg-grey">
-
-                    <h2 class="text-center">CONTACT</h2>
-
-                    <div class="row">
-                        <div class="col-sm-5 text-center">
-
-                            <p>Contact opnemen?</p>
-                            <p><span class="glyphicon glyphicon-map-marker"></span> Almelo, NL</p>
-                            <p><span class="glyphicon glyphicon-phone"></span> +31 0646854690</p>
-                            <p><span class="glyphicon glyphicon-envelope"></span> respons@hqsinternational.org</p>
-
+                    </div> <!--einde container devops-->
+                    <!--container dobbelspellen-->
+                    <div class="col-sm-3 text-info p-0 m-0">
+                        <div class="thumbnail no-decoration" style="height: 315px;"><a target="_blank" href="Spelletjes.html">
+                            <img style="height: 150px; width: 150px;" src="afbeeldingen/dobbelspel.png" alt="Spelletjes">
+                            <p>Dobbelspellen</p>
+                            <p>Onze latest project</p>
+                        </a>
                         </div>
+                    </div> <!--einde container dobbelspellen-->
 
-                        <!-- Container (Contact) Second Part -->
-                        <form action="mailto:respons@hqsinternational.org" method="post" enctype="text/plain">
-                            <div class="col-sm-7 slideanim">
-                                <div class="row">
-                                    <div class="col-sm-6 form-group">
 
-                                        <input class="form-control" id="naam" name="naam" placeholder="Naam" type="text" required>
 
-                                    </div>
+                    <br>
+                </div> <!--einde row-->
 
-                                    <div class="col-sm-6 form-group">
 
-                                        <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+            </div> <!--einde container fluid-->
+        </div>
+    </div>
+</div> <!--einde container mission-->
 
-                                    </div>
-                                </div>
-                                <textarea class="form-control" id="text" name="text" placeholder="Tekst" rows="5"></textarea><br>
-                                <div class="row">
-                                    <div class="col-sm-12 form-group">
+<div id="contact" class="container-fluid bg-grey p-0">
 
-                                        <button id="knopje" class="btn  btn-outline-info btn-default pull-right" type="submit">Verstuur</button>
+    <h2 class="text-center">CONTACT</h2>
 
-                                    </div>
-                                </div>
-                            </div>
-                        </form>
+    <div class="row">
+        <div class="col-sm-5 text-center">
+
+            <p>Contact opnemen?</p>
+            <p><span class="glyphicon glyphicon-map-marker"></span> Almelo, NL</p>
+            <p><span class="glyphicon glyphicon-phone"></span> +31 0646854690</p>
+            <p><span class="glyphicon glyphicon-envelope"></span> respons@hqsinternational.org</p>
+
+        </div>
+
+        <!-- Container (Contact) Second Part -->
+        <form action="mailto:respons@hqsinternational.org" method="post" enctype="text/plain">
+            <div class="col-sm-7 slideanim">
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+
+                        <input class="form-control" id="naam" name="naam" placeholder="Naam" type="text" required>
+
                     </div>
+
+                    <div class="col-sm-6 form-group">
+
+                        <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+
+                    </div>
+                </div>
+                <textarea class="form-control" id="text" name="text" placeholder="Tekst" rows="5"></textarea><br>
+                <div class="row">
+                    <div class="col-sm-12 form-group">
+
+                        <button id="knopje" class="btn  btn-outline-info btn-default pull-right" type="submit">Verstuur</button>
+
                     </div>
                 </div>
             </div>
-        </div>
+        </form>
     </div>
-</div>
+</div> <!--dit is de gehele contact pagina-->
 
 <!-- Footer -->
 <footer class="container-fluid text-center">
