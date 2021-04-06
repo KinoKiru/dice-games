@@ -70,13 +70,14 @@ document.onkeydown = function(e) {
 //Download Teller
 function klikTeller() {
     if (typeof(Storage) !== "undefined") {
-        if (localStorage.clickcount) {
-            localStorage.clickcount = Number(localStorage.clickcount)+1;
+        if (localStorage.downloadklik) {
+            localStorage.downloadklik = Number(localStorage.downloadklik)+1;
         } else {
-            localStorage.clickcount = 1;
+            localStorage.downloadklik = 1;
         }
-        document.getElementById("result").innerHTML = "Dit bestand is " + localStorage.clickcount + " keer gedownload.";
+        document.getElementById("result").innerHTML = "Dit bestand is " + localStorage.downloadklik + " keer gedownload.";
     } else {
         document.getElementById("result").innerHTML = "Sorry, jou browser ondersteund dit niet.";
     }
 }
+
