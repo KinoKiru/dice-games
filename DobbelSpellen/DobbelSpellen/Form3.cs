@@ -6,18 +6,24 @@ namespace DobbelSpellen
 {
     public partial class Form3 : Form
     {
-        int AantalWorpen;
-        int PuntenComputer;
-        int PuntenSpeler;
+        private int AantalWorpen = 0;
+        private int PuntenComputer;
+        private int PuntenSpeler;
+        private int Rondes = 0;
+        private int[] beurtComputer;
+        private int[] beurtSpeler;
+        private Image imageSpeler;
+        private Image imageComputer;
+        private DateTime Geboortedatum;
+        private int Winnaar;
 
         public Form3()
         {
             InitializeComponent();
-            AantalWorpen = 0;
             PuntenComputer = 0;
             PuntenSpeler = 0;
         }
-        
+
         public void ToonDobbelStenenComputer(int[] worp)
         {
             this.pictureBox1.Image = Image.FromFile(string.Format("photo\\dice_{0}.jpg", worp[0]));
@@ -32,61 +38,71 @@ namespace DobbelSpellen
             this.pictureBox6.Image = Image.FromFile(string.Format("photo\\dice_{0}.jpg", worp[2]));
         }
 
+
         private void btnGooi_Click(object sender, EventArgs e)
         {
-            int[] beurtComputer = Gooien.GooiDobbelStenen();
-            int[] beurtSpeler = Gooien.GooiDobbelStenen();
-
-            ToonDobbelStenenComputer(beurtComputer);
-            ToonDobbelStenenSpeler(beurtSpeler);
-
-            AantalWorpen++;
-
-            // Bepaal de worp waarde van de computer
-            int totaalComputer = 0;
-            foreach (int steen in beurtComputer)
+            if (AantalWorpen < 6)
             {
-                totaalComputer += steen;
-            }
-            tbComputer.Text = totaalComputer.ToString();
 
-            // Bepaal de worp waarde van de speler
-            int totaalSpeler = 0;
-            foreach (int steen in beurtSpeler)
-            {
-                totaalSpeler+= steen;
-            }
-            tbSpeler.Text = totaalSpeler.ToString();
+                beurtComputer = Gooien.GooiDobbelStenen();
+                beurtSpeler = Gooien.GooiDobbelStenen();
 
-            int verschil = Math.Abs(totaalComputer - totaalSpeler);
+                ToonDobbelStenenComputer(beurtComputer);
+                ToonDobbelStenenSpeler(beurtSpeler);
 
-            if (radHoger.Checked)
-            {
-                if (totaalComputer < totaalSpeler)
+
+                // Bepaal de worp waarde van de computer
+                int totaalComputer = 0;
+                foreach (int steen in beurtComputer)
                 {
-                    // punten naar speler
-                    PuntenSpeler += verschil;
-                    tbPuntenSpeler.Text = Convert.ToString(PuntenSpeler);
+                    totaalComputer += steen;
+                }
+                tbComputer.Text = totaalComputer.ToString();
+
+                // Bepaal de worp waarde van de speler
+                int totaalSpeler = 0;
+                foreach (int steen in beurtSpeler)
+                {
+                    totaalSpeler += steen;
+                }
+                tbSpeler.Text = totaalSpeler.ToString();
+
+                int verschil = Math.Abs(totaalComputer - totaalSpeler);
+
+                if (radHoger.Checked)
+                {
+                    if (totaalComputer < totaalSpeler)
+                    {
+                        // punten naar speler
+                        PuntenSpeler += verschil;
+                        tbPuntenSpeler.Text = Convert.ToString(PuntenSpeler);
+                    }
+                    else
+                    {
+                        // punten naar computer
+                        PuntenComputer += verschil;
+                        tbPuntenComputer.Text = Convert.ToString(PuntenComputer);
+                    }
                 }
                 else
                 {
-                    // punten naar computer
-                    PuntenComputer += verschil;
-                    tbPuntenComputer.Text = Convert.ToString(PuntenComputer);
+                    if (totaalComputer < totaalSpeler)
+                    {
+                        // punten naar speler
+                        PuntenSpeler += verschil;
+                    }
+                    else
+                    {
+                        // punten naar computer
+                        PuntenComputer += verschil;
+                    }
                 }
+                AantalWorpen++;
             }
             else
             {
-                if (totaalComputer < totaalSpeler)
-                {
-                    // punten naar speler
-                    PuntenSpeler += verschil;
-                }
-                else
-                {
-                    // punten naar computer
-                    PuntenComputer += verschil;
-                }
+                // Bepalen wie de winnaar is
+                btnGooi.Enabled = false;
             }
 
             tbPuntenComputer.Text = PuntenComputer.ToString();
@@ -96,10 +112,16 @@ namespace DobbelSpellen
             Speloverzicht.Items.Add(string.Format("Worp {0}\t{1}\t{2}", AantalWorpen, PuntenSpeler, PuntenComputer));
         }
 
-        private void tbPuntenComputer_TextChanged(object sender, EventArgs e)
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
-
+            throw new NotImplementedException();
         }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
 
         private void btnSpelerfoto_Click(object sender, EventArgs e)
         {
@@ -108,7 +130,7 @@ namespace DobbelSpellen
             if (of.ShowDialog() == DialogResult.OK)
             {
                 path = of.FileName;
-                picWinnaar.Image = Image.FromFile(path);
+                imageSpeler = Image.FromFile(path);
             }
         }
 
@@ -119,8 +141,31 @@ namespace DobbelSpellen
             if (of.ShowDialog() == DialogResult.OK)
             {
                 path = of.FileName;
-                picWinnaar.Image = Image.FromFile(path);
+                imageComputer = Image.FromFile(path);
             }
+        }
+
+        private void btnOpslaan_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (tbNaam.Text != "" && tbJaar.Text != "" && tbMaand.Text != "" && tbDag.Text != "" && btnComputerfoto != null && btnSpelerfoto != null)
+                {
+                    btnGooi.Enabled = true;
+                }
+                else
+                    MessageBox.Show("Vul alle gegevens in!");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void picWinnaar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
+
