@@ -70,6 +70,7 @@ namespace DobbelSpellen
             this.pbWinaar = new System.Windows.Forms.PictureBox();
             this.label10 = new System.Windows.Forms.Label();
             this.lbWinnaar = new System.Windows.Forms.ListBox();
+            this.btnCheck = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.gbPlayer1.SuspendLayout();
@@ -142,7 +143,6 @@ namespace DobbelSpellen
             this.tbNaam.Name = "tbNaam";
             this.tbNaam.Size = new System.Drawing.Size(100, 20);
             this.tbNaam.TabIndex = 3;
-            this.tbNaam.TextChanged += new System.EventHandler(this.tbNaam_TextChanged);
             // 
             // label1
             // 
@@ -210,7 +210,6 @@ namespace DobbelSpellen
             this.tbNaam2.Name = "tbNaam2";
             this.tbNaam2.Size = new System.Drawing.Size(100, 20);
             this.tbNaam2.TabIndex = 3;
-            this.tbNaam2.TextChanged += new System.EventHandler(this.tbNaam_TextChanged);
             // 
             // label4
             // 
@@ -467,12 +466,23 @@ namespace DobbelSpellen
             this.lbWinnaar.Size = new System.Drawing.Size(256, 160);
             this.lbWinnaar.TabIndex = 9;
             // 
+            // btnCheck
+            // 
+            this.btnCheck.Location = new System.Drawing.Point(107, 254);
+            this.btnCheck.Name = "btnCheck";
+            this.btnCheck.Size = new System.Drawing.Size(125, 23);
+            this.btnCheck.TabIndex = 10;
+            this.btnCheck.Text = "Check";
+            this.btnCheck.UseVisualStyleBackColor = true;
+            this.btnCheck.Click += new System.EventHandler(this.btnCheck_Click);
+            // 
             // Form4
             // 
             this.AcceptButton = this.btnGa;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1635, 529);
+            this.Controls.Add(this.btnCheck);
             this.Controls.Add(this.lbWinnaar);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.pbWinaar);
@@ -551,5 +561,6 @@ namespace DobbelSpellen
         private System.Windows.Forms.PictureBox pbWinaar;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.ListBox lbWinnaar;
+        private System.Windows.Forms.Button btnCheck;
     }
 }

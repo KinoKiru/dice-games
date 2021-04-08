@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+
+    <!-- Scripts en fonts -->
+    <title>Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Pictogrammen -->
+    <link rel="stylesheet" href="Styles/bootstrap/bootstrap-4.5.3-dist/css/bootstrap.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="Styles/main.css">
+    <link rel="icon" href="afbeeldingen/HQS_Logo.png">
+
+</head>
+<body  id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60" oncontextmenu="return false">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+
+            </button>
+
+            <a class="navbar-brand" style="padding-top: 7.5px;" href="index.html"><img
+                    src="afbeeldingen/HQS_Logo.png" class="Image" alt=""></a>
+
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+
+            <ul class="nav navbar-nav navbar-right">
+
+                <li><a href="#about">OVER ONS</a></li>
+                <li><a href="#mission">MISSIE</a></li>
+                <li><a href="#services">WAARDEN</a></li>
+                <li><a href="#portfolio">PORTFOLIO</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+                <li><a id="date" href="#"></a></li>
+               <!-- <button class="btn-toggle">Toggle Dark-Mode</button>-->
+                 <div class="custom-control custom-switch">
+                                  <input type="checkbox"   name="darkModeSwitch" class="custom-control-input dark-mode-toggle" id="dark-mode-toggle">
+                                  <label for="dark-mode-toggle" class="custom-control-label">Darkmode</label>
+                 </div>
+                <!--<button type="button" class=" btn-sm dark-mode-toggle btn-outline-info" id="dark-mode-toggle" >Dark mode</button>-->
+
+
+
+                <script>
+                    var today = new Date();
+                    var date = today.getDate() + '-' + (today.getMonth() + 1) + '-' + today.getFullYear();
+                    document.getElementById("date").innerHTML = "DATUM: " + date;
+                </script>
+
+            </ul>
+
+        </div>
+    </div>
+</nav>
+
+<!-- Website title  -->
+<div  id="jumbo" class="jumbotron text-center">
+
+    <h1>HQS Simpele rekenmachine</h1>
+    <p>HQS bestaan nu 10 jaar</p>
+
+</div>
+
+<!-- Container (About) -->
+<div id="about" class="container-fluid text-center">
+    <div class="row">
+        <div class="col-sm-12 pager">
+            <h2>Over het bedrijf</h2><br>
+            <h4>Eigenaarschap en ontwikkeling</h4><br>
+            <p>HQS realiseert maatwerksoftware voor verschillende soorten klanten. <br>
+                HQS bestaan nu 10 jaar en heeft ongeveer 12 scrumgroepen aan het werk. De medewerkers hebben allemaal
+                kennis van C#, HTML, CSS, javascript & GitHub</p>
+
+        </div>
+    </div>
+
+    <!-- Mission Button -->
+    <div id="mission" class="container-fluid text-center bg-grey p-0">
+        <div class="row">
+            <div class="col-sm-4">
+
+                <span class="glyphicon glyphicon-globe logo slideanim"></span>
+
+            </div>
+
+            <!-- "Waarden" text -->
+            <div class="col-sm-4 text-center">
+
+                <h2>Onze Waarden</h2><br>
+                <h4><strong>Onze missie:</strong> HQS hecht veel waarde aan het opleveren van software van hoge
+                    kwaliteit, dit kan naar hun visie alleen maar bereikt worden door een goede samenwerking. Het is
+                    belangrijk dat er een veilige werksfeer is en er goed gecommuniceerd wordt binnen het team en dat
+                    iedereen van elkaar kan leren</h4><br>
+                <p><strong>Onze visie:</strong> HQS wil nog steeds dezelfde kwaliteit producten leveren maar op een
+                    snellere basis zodat het bedrijf zelf groter wordt.</p>
+
+            </div>
+        </div>
+
+        <!-- Container (Services) -->
+        <div id="services" class="container-fluid text-center p-0">
+
+            <h2>Wat wij belangrijk vinden</h2>
+            <br>
+            <div class="row slideanim">
+                <div class="col-sm-4">
+
+                    <span class="glyphicon glyphicon-link logo-small"></span>
+                    <h4>GitHub</h4>
+                    <p>Een plek voor alle bestanden</p>
+
+                </div>
+
+                <!-- Container (Werksfeer) -->
+                <div class="col-sm-4">
+
+                    <span class="glyphicon glyphicon-heart logo-small"></span>
+                    <h4>Werksfeer</h4>
+                    <p>Gezellige werksfeer met goed teamwork</p>
+
+                </div>
+
+                <!-- Container (Scrum) -->
+                <div class="col-sm-4">
+
+                    <span class="glyphicon glyphicon-lock logo-small"></span>
+                    <h4>Scrum</h4>
+                    <p>De manier waarop wij werken</p>
+
+                </div>
+
+            </div>
+
+            <!-- Container (Communicatie) -->
+            <br><br>
+            <div class="row slideanim">
+                <div class="col-sm-4">
+
+                    <span class="glyphicon glyphicon-earphone logo-small"></span>
+                    <h4>Communicatie</h4>
+                    <p>Communicatie voor effiency</p>
+
+                </div>
+
+                <!-- Container (Kwaliteit) -->
+                <div class="col-sm-4">
+
+                    <span class="glyphicon glyphicon-certificate logo-small"></span>
+                    <h4>Kwaliteit</h4>
+                    <p>Goede kwaliteit maakt de klant blij</p>
+
+                </div>
+
+                <!-- Container (DevOps) -->
+                <div class="col-sm-4">
+
+                    <span class="glyphicon glyphicon-wrench logo-small"></span>
+                    <h4 style="color:#303030;">DevOps</h4>
+                    <p>Waar we alles inplannen</p>
+
+                </div>
+            </div>
+
+
+            <!-- Container (Puppylove) -->
+            <div id="portfolio" class="container-fluid text-center bg-grey ">
+
+                <h2>Portfolio</h2><br>
+                <h4>Wat wij gemaakt hebben</h4>
+
+                <div class="row text-center slideanim">
+                    <div class="col-sm-3 p-0 m-0">
+                        <div class="thumbnail no-decoration"><a href="PuppyLove/index.html">
+
+                            <img style="height: 150px; width: 150px;" src="PuppyLove/Images/PuppyLove.png"  alt="Puppylove"
+                                 >
+                            <p><strong>PuppyLove</strong></p>
+                            <p>Animalfriends Incorporated</p>
+
+                        </a></div>
+                    </div>
+
+                    <!-- Container (Simple Calculator) -->
+                    <div class="col-sm-3 p-0 m-0">
+                        <div class="thumbnail no-decoration" style="height: 315px;"><a
+                                href="calculatorpage/calculator.html">
+
+                            <img style="height: 150px; width: 150px;" src="afbeeldingen/HQS_Logo.png" alt="Rekenmachine"
+                                >
+                            <p>Rekenmachine</p>
+                            <p>High Quality Calculator</p>
+
+                        </a></div>
+                    </div>
+                    <!-- Container (DevOps) -->
+                    <div class="col-sm-3 p-0 m-0">
+                        <div class="thumbnail no-decoration" style="height: 315px;"><a target="_blank"
+                                                                                       href="https://dev.azure.com/0328026/Project%20Periode%203">
+
+                            <img style="height: 150px; width: 150px;" src="afbeeldingen/dev-ops_logo.png" alt="DevOps"
+                                 >
+                            <p>DevOps</p>
+                            <p>Onze DevOps omgeving</p>
+
+                        </a>
+
+                        </div>
+                    </div> <!--einde container devops-->
+                    <!--container dobbelspellen-->
+                    <div class="col-sm-3 text-info p-0 m-0">
+                        <div class="thumbnail no-decoration" style="height: 315px;"><a target="_blank" href="Spelletjes.html">
+                            <img style="height: 150px; width: 150px;" src="afbeeldingen/dobbelspel.png" alt="Spelletjes">
+                            <p>Dobbelspellen</p>
+                            <p>Onze latest project</p>
+                        </a>
+                        </div>
+                    </div> <!--einde container dobbelspellen-->
+
+
+
+                    <br>
+                </div> <!--einde row-->
+
+
+            </div> <!--einde container fluid-->
+        </div>
+    </div>
+</div> <!--einde container mission-->
+
+<div id="contact" class="container-fluid bg-grey p-0">
+
+    <h2 class="text-center">CONTACT</h2>
+
+    <div class="row">
+        <div class="col-sm-5 text-center">
+
+            <p>Contact opnemen?</p>
+            <p><span class="glyphicon glyphicon-map-marker"></span> Almelo, NL</p>
+            <p><span class="glyphicon glyphicon-phone"></span> +31 0646854690</p>
+            <p><span class="glyphicon glyphicon-envelope"></span> respons@hqsinternational.org</p>
+
+        </div>
+
+        <!-- Container (Contact) Second Part -->
+        <form action="mailto:respons@hqsinternational.org" method="post" enctype="text/plain">
+            <div class="col-sm-7 slideanim">
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+
+                        <input class="form-control" id="naam" name="naam" placeholder="Naam" type="text" required>
+
+                    </div>
+
+                    <div class="col-sm-6 form-group">
+
+                        <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+
+                    </div>
+                </div>
+                <textarea class="form-control" id="text" name="text" placeholder="Tekst" rows="5"></textarea><br>
+                <div class="row">
+                    <div class="col-sm-12 form-group">
+
+                        <button id="knopje" class="btn  btn-outline-info btn-default pull-right" type="submit">Verstuur</button>
+
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div> <!--dit is de gehele contact pagina-->
+
+<!-- Footer -->
+<footer class="container-fluid text-center">
+
+    <a href="#myPage" title="To Top">
+        <span class="glyphicon glyphicon-chevron-up"></span>
+    </a>
+    <p>Copyright® of High Quality Software 2021</p>
+
+</footer>
+
+<!-- Script -->
+<script>
+    $(document).ready(function () {
+        // Add smooth scrolling to all links in navbar + footer link
+        $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 900, function () {
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            } // End if
+        });
+
+        $(window).scroll(function () {
+            $(".slideanim").each(function () {
+                var pos = $(this).offset().top;
+
+                var winTop = $(window).scrollTop();
+                if (pos < winTop + 600) {
+                    $(this).addClass("slide");
+                }
+            });
+        });
+    })
+</script>
+<br>
+<!-- Bootstrap en jquery files -->
+<script src="Styles/bootstrap/jquery/jquery-3.5.1.min.js"></script>
+<script src="Styles/bootstrap/bootstrap-4.5.3-dist/js/bootstrap.js"></script>
+<script src="Styles/beveiliging%20&%20download%20teller.js"></script>
+<script src="Styles/darkmode.js"></script>
+
+</body>
+</html>

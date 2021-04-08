@@ -1,0 +1,82 @@
+body{
+    text-align: center;
+}
+.header{
+    position: static;
+    height: 100px;
+    width: 100%;
+    background: #70c26f;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    /*dit is allemaal voor de header boven in */
+}
+
+.tab{
+    display: inline-block;
+    position: relative;
+    border-radius: 4px;
+    margin: 10px;
+    overflow: hidden;
+    text-align: center;
+    width: 20%;
+    height: 50px;
+    line-height: 48px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    /*deze is voor alle tabs maar dan specifiek per tab*/
+}
+#info a{
+    text-decoration: none;
+    color: inherit;
+}
+
+#info a:hover{
+    border-bottom: 2px solid black;
+    color: inherit;
+    font-weight: bold;
+    /*dit is opmaak voor wanneer je met de muis over de link gaat*/
+}
+.content-left{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+.x-icon{
+    text-align: center;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 1.1em;
+    background-color: #70c26f;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    /*dit zijn de lines voor de x knop*/
+}
+.x-icon:hover{
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+    /* als je hoverd dan veranderd de schaduw van knop x*/
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+.column {
+    flex: 24%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+@media screen and (max-width: 825px) {
+    .column {
+        flex: 48%;
+        max-width: 50%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,146 @@
+body{
+    font-family: 'Roboto 2', 'helvetica neue', sans-serif;
+    margin: 0;
+    background: #dad4d4;
+    text-align: center;
+}
+.header{
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    background: #70c26f;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    /*dit is allemaal voor de header boven in */
+}
+.tabs{
+    position: absolute;
+    top: 150px;
+    right: 0;
+    left: 0;
+    text-align: center;
+    /*dit is de algemeene class voor de tabs dit is aleen zo dat ze in het midden staan en de text in de center staat*/
+}
+.tab{
+    display: inline-block;
+    position: relative;
+    border-radius: 4px;
+    margin: 10px;
+    overflow: hidden;
+    text-align: center;
+    width: 20%;
+    height: 50px;
+    line-height: 48px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    /*deze is voor alle tabs maar dan specifiek per tab*/
+}
+.tab:hover{
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.5);
+    /*dit is voor elke tab als je erover heen hoverd*/
+}
+#tab1{
+    background-color: #f4DB33;
+}
+#tab2{
+    background-color: #972ff8;
+}
+#tab3{
+background-color: #dc3c84;
+}
+/*hier boven geld dat voor elke tab een andere kleur komt*/
+.cards{
+    position: relative;
+    top: 150px;
+    left: 60px;
+    height: 300px;
+    width: 80%;
+    border-radius: 4px;
+    text-align: start;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+    /*dit is de linker kant van de tab als er opgeklikt word*/
+}
+.content-left{
+    float: left;
+    width: 22%;
+    height: 270px;
+    padding: 15px;
+    text-align: center;
+    /*dit geld voor de cards*/
+}
+.content-left img{
+    max-width: 55%;
+    border-radius: 50%;
+    /*dit is opmaak voor foto's op de card*/
+}
+.content-right{
+    padding-top: 15px;
+    padding-left: 15px;
+    float: right;
+    width: 60%;
+    height: 300px;
+    /*dit geld voor de content (dus de rechterkant van de tab als erop geklikt word)*/
+}
+.content-right a{
+    text-decoration: none;
+    color: inherit;
+    /*dit is opmaak voor de statische vorm van de link*/
+}
+.content-right a:hover{
+    border-bottom: 2px solid black;
+    color: inherit;
+    font-weight: bold;
+    /*dit is opmaak voor wanneer je met de muis over de link gaat*/
+}
+.x-icon{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 2.5em;
+    background-color: #70c26f;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.5);
+    /*dit zijn de lines voor de x knop*/
+}
+.x-icon:hover{
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+    /* als je hoverd dan veranderd de schaduw van knop x*/
+}
+#card1 .content-left{
+    background-color: #f4DB33;
+}
+#card2 .content-left{
+    background-color: #972ff8;
+}
+#card3 .content-left{
+    background-color: #dc3c84;
+} /*dit is voor de kleur van de tabs als erop gedrukt wordt*/
+@keyframes zoomin {
+    0%{
+        opacity: 0;
+        transform: scale3d(.3,.3,.3);
+    }
+    50%{
+        opacity: 0.5;
+    }
+}
+.cards{
+    animation-name: zoomin;
+    animation-duration: 0.6s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+/*dit is allemaal voor de animatie als je op een tab klikt*/
+.footer{
+  position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:gray;
+    color: white;
+    text-align: center;
+}
+
+.image{
+    height: 100px;
+    width: 100px;
+}
