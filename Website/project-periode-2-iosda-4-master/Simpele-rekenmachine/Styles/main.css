@@ -63,15 +63,24 @@ h4 {
     width: 35px;
     height: 35px;
 }
-.carousel-control.right, .carousel-control.left {
-    background-image: none;
-    color: rgb(121, 161, 41);
+.alert {
+padding: 20px;
+background-color:#45b3e0; 
+color: white;
+margin-bottom: 15px;
 }
-.carousel-indicators li {
-    border-color: rgb(121, 161, 41);
+.closebtn {
+margin-left: 15px;
+color: white;
+font-weight: bold;
+float: right;
+font-size: 50px;
+line-height: 25px;
+cursor: pointer;
+transition: 0.3s;
 }
-.carousel-indicators li.active {
-    background-color: rgb(121, 161, 41);
+.closebtn:hover {
+color: black;
 }
 .item h4 {
     font-size: 29px;
