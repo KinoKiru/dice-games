@@ -63,6 +63,45 @@ h4 {
     width: 35px;
     height: 35px;
 }
+.alert {
+padding: 20px;
+background-color:#45b3e0; 
+color: white;
+margin-bottom: 15px;
+}
+.closebtn {
+margin-left: 15px;
+color: white;
+font-weight: bold;
+float: right;
+font-size: 50px;
+line-height: 25px;
+cursor: pointer;
+transition: 0.3s;
+}
+.closebtn:hover {
+color: black;
+}
+.accordion {
+background-color: #eee;
+color: #444;
+cursor: pointer;
+padding: 18px;
+width: 100%;
+text-align: left;
+border: none;
+outline: none;
+transition: 0.4s;
+}
+.active, .accordion:hover {
+background-color: #ccc;
+}
+.panel {
+padding: 0 18px;
+background-color: white;
+display: none;
+overflow: hidden;
+}
 .carousel-control.right, .carousel-control.left {
     background-image: none;
     color: rgb(121, 161, 41);
