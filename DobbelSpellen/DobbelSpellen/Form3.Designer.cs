@@ -85,27 +85,31 @@ namespace DobbelSpellen
             this.gbComputer.Controls.Add(this.pictureBox2);
             this.gbComputer.Controls.Add(this.pictureBox3);
             this.gbComputer.Controls.Add(this.pictureBox1);
-            this.gbComputer.Location = new System.Drawing.Point(19, 12);
+            this.gbComputer.Location = new System.Drawing.Point(25, 15);
+            this.gbComputer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gbComputer.Name = "gbComputer";
-            this.gbComputer.Size = new System.Drawing.Size(338, 253);
+            this.gbComputer.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbComputer.Size = new System.Drawing.Size(451, 311);
             this.gbComputer.TabIndex = 0;
             this.gbComputer.TabStop = false;
             this.gbComputer.Text = "Computer";
             // 
             // tbComputer
             // 
-            this.tbComputer.Location = new System.Drawing.Point(130, 217);
+            this.tbComputer.Location = new System.Drawing.Point(173, 267);
+            this.tbComputer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tbComputer.Name = "tbComputer";
             this.tbComputer.ReadOnly = true;
-            this.tbComputer.Size = new System.Drawing.Size(79, 20);
+            this.tbComputer.Size = new System.Drawing.Size(104, 22);
             this.tbComputer.TabIndex = 10;
             // 
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(129, 121);
+            this.pictureBox2.Location = new System.Drawing.Point(172, 149);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(80, 77);
+            this.pictureBox2.Size = new System.Drawing.Size(107, 95);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 8;
             this.pictureBox2.TabStop = false;
@@ -113,9 +117,10 @@ namespace DobbelSpellen
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(228, 32);
+            this.pictureBox3.Location = new System.Drawing.Point(304, 39);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(80, 77);
+            this.pictureBox3.Size = new System.Drawing.Size(107, 95);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 9;
             this.pictureBox3.TabStop = false;
@@ -124,40 +129,44 @@ namespace DobbelSpellen
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(33, 32);
+            this.pictureBox1.Location = new System.Drawing.Point(44, 39);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(80, 77);
+            this.pictureBox1.Size = new System.Drawing.Size(107, 95);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // picWinnaar
             // 
-            this.picWinnaar.Location = new System.Drawing.Point(780, 299);
+            this.picWinnaar.Location = new System.Drawing.Point(1040, 368);
+            this.picWinnaar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.picWinnaar.Name = "picWinnaar";
-            this.picWinnaar.Size = new System.Drawing.Size(150, 186);
+            this.picWinnaar.Size = new System.Drawing.Size(200, 229);
             this.picWinnaar.TabIndex = 2;
             this.picWinnaar.TabStop = false;
-            this.picWinnaar.Click += new System.EventHandler(this.picWinnaar_Click);
             // 
             // Speloverzicht
             // 
             this.Speloverzicht.FormattingEnabled = true;
+            this.Speloverzicht.ItemHeight = 16;
             this.Speloverzicht.Items.AddRange(new object[] {
             "Speloverzicht  Hoger - Lager",
             "",
             "Worpen:  Speler:     Computer:"});
-            this.Speloverzicht.Location = new System.Drawing.Point(19, 301);
+            this.Speloverzicht.Location = new System.Drawing.Point(25, 370);
+            this.Speloverzicht.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Speloverzicht.Name = "Speloverzicht";
-            this.Speloverzicht.Size = new System.Drawing.Size(347, 186);
+            this.Speloverzicht.Size = new System.Drawing.Size(461, 228);
             this.Speloverzicht.TabIndex = 3;
             // 
             // lblStand
             // 
             this.lblStand.AutoSize = true;
-            this.lblStand.Location = new System.Drawing.Point(16, 285);
+            this.lblStand.Location = new System.Drawing.Point(21, 351);
+            this.lblStand.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblStand.Name = "lblStand";
-            this.lblStand.Size = new System.Drawing.Size(129, 13);
+            this.lblStand.Size = new System.Drawing.Size(170, 17);
             this.lblStand.TabIndex = 4;
             this.lblStand.Text = "Aantal punten en worpen:";
             // 
@@ -165,9 +174,10 @@ namespace DobbelSpellen
             // 
             this.radHoger.AutoSize = true;
             this.radHoger.Checked = true;
-            this.radHoger.Location = new System.Drawing.Point(497, 285);
+            this.radHoger.Location = new System.Drawing.Point(663, 351);
+            this.radHoger.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radHoger.Name = "radHoger";
-            this.radHoger.Size = new System.Drawing.Size(54, 17);
+            this.radHoger.Size = new System.Drawing.Size(68, 21);
             this.radHoger.TabIndex = 5;
             this.radHoger.TabStop = true;
             this.radHoger.Text = "Hoger";
@@ -176,9 +186,10 @@ namespace DobbelSpellen
             // radLager
             // 
             this.radLager.AutoSize = true;
-            this.radLager.Location = new System.Drawing.Point(586, 285);
+            this.radLager.Location = new System.Drawing.Point(781, 351);
+            this.radLager.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.radLager.Name = "radLager";
-            this.radLager.Size = new System.Drawing.Size(52, 17);
+            this.radLager.Size = new System.Drawing.Size(66, 21);
             this.radLager.TabIndex = 6;
             this.radLager.Text = "Lager";
             this.radLager.UseVisualStyleBackColor = true;
@@ -198,17 +209,20 @@ namespace DobbelSpellen
             this.gbInfo.Controls.Add(this.lblMaand);
             this.gbInfo.Controls.Add(this.lblJaar);
             this.gbInfo.Controls.Add(this.lblNaam);
-            this.gbInfo.Location = new System.Drawing.Point(780, 12);
+            this.gbInfo.Location = new System.Drawing.Point(1040, 15);
+            this.gbInfo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gbInfo.Name = "gbInfo";
-            this.gbInfo.Size = new System.Drawing.Size(338, 268);
+            this.gbInfo.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbInfo.Size = new System.Drawing.Size(451, 330);
             this.gbInfo.TabIndex = 7;
             this.gbInfo.TabStop = false;
             // 
             // btnOpslaan
             // 
-            this.btnOpslaan.Location = new System.Drawing.Point(91, 234);
+            this.btnOpslaan.Location = new System.Drawing.Point(121, 288);
+            this.btnOpslaan.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnOpslaan.Name = "btnOpslaan";
-            this.btnOpslaan.Size = new System.Drawing.Size(152, 23);
+            this.btnOpslaan.Size = new System.Drawing.Size(203, 28);
             this.btnOpslaan.TabIndex = 21;
             this.btnOpslaan.Text = "Opslaan";
             this.btnOpslaan.UseVisualStyleBackColor = true;
@@ -216,9 +230,10 @@ namespace DobbelSpellen
             // 
             // btnComputerfoto
             // 
-            this.btnComputerfoto.Location = new System.Drawing.Point(91, 202);
+            this.btnComputerfoto.Location = new System.Drawing.Point(121, 249);
+            this.btnComputerfoto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnComputerfoto.Name = "btnComputerfoto";
-            this.btnComputerfoto.Size = new System.Drawing.Size(152, 26);
+            this.btnComputerfoto.Size = new System.Drawing.Size(203, 32);
             this.btnComputerfoto.TabIndex = 17;
             this.btnComputerfoto.Text = "Open Computer Foto";
             this.btnComputerfoto.UseVisualStyleBackColor = true;
@@ -226,9 +241,10 @@ namespace DobbelSpellen
             // 
             // btnSpelerfoto
             // 
-            this.btnSpelerfoto.Location = new System.Drawing.Point(91, 170);
+            this.btnSpelerfoto.Location = new System.Drawing.Point(121, 209);
+            this.btnSpelerfoto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnSpelerfoto.Name = "btnSpelerfoto";
-            this.btnSpelerfoto.Size = new System.Drawing.Size(152, 26);
+            this.btnSpelerfoto.Size = new System.Drawing.Size(203, 32);
             this.btnSpelerfoto.TabIndex = 16;
             this.btnSpelerfoto.Text = "Open speler foto";
             this.btnSpelerfoto.UseVisualStyleBackColor = true;
@@ -236,74 +252,83 @@ namespace DobbelSpellen
             // 
             // tbDag
             // 
-            this.tbDag.Location = new System.Drawing.Point(91, 144);
+            this.tbDag.Location = new System.Drawing.Point(121, 177);
+            this.tbDag.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tbDag.Name = "tbDag";
-            this.tbDag.Size = new System.Drawing.Size(152, 20);
+            this.tbDag.Size = new System.Drawing.Size(201, 22);
             this.tbDag.TabIndex = 17;
             // 
             // tbMaand
             // 
-            this.tbMaand.Location = new System.Drawing.Point(91, 111);
+            this.tbMaand.Location = new System.Drawing.Point(121, 137);
+            this.tbMaand.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tbMaand.Name = "tbMaand";
-            this.tbMaand.Size = new System.Drawing.Size(152, 20);
+            this.tbMaand.Size = new System.Drawing.Size(201, 22);
             this.tbMaand.TabIndex = 18;
             // 
             // tbNaam
             // 
-            this.tbNaam.Location = new System.Drawing.Point(91, 23);
+            this.tbNaam.Location = new System.Drawing.Point(121, 28);
+            this.tbNaam.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tbNaam.Name = "tbNaam";
-            this.tbNaam.Size = new System.Drawing.Size(152, 20);
+            this.tbNaam.Size = new System.Drawing.Size(201, 22);
             this.tbNaam.TabIndex = 19;
             // 
             // tbJaar
             // 
-            this.tbJaar.Location = new System.Drawing.Point(91, 77);
+            this.tbJaar.Location = new System.Drawing.Point(121, 95);
+            this.tbJaar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tbJaar.Name = "tbJaar";
-            this.tbJaar.Size = new System.Drawing.Size(152, 20);
+            this.tbJaar.Size = new System.Drawing.Size(201, 22);
             this.tbJaar.TabIndex = 16;
             // 
             // lblGeboortedatum
             // 
             this.lblGeboortedatum.AutoSize = true;
-            this.lblGeboortedatum.Location = new System.Drawing.Point(88, 61);
+            this.lblGeboortedatum.Location = new System.Drawing.Point(117, 75);
+            this.lblGeboortedatum.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblGeboortedatum.Name = "lblGeboortedatum";
-            this.lblGeboortedatum.Size = new System.Drawing.Size(83, 13);
+            this.lblGeboortedatum.Size = new System.Drawing.Size(111, 17);
             this.lblGeboortedatum.TabIndex = 17;
             this.lblGeboortedatum.Text = "Geboortedatum:";
             // 
             // lblDag
             // 
             this.lblDag.AutoSize = true;
-            this.lblDag.Location = new System.Drawing.Point(38, 147);
+            this.lblDag.Location = new System.Drawing.Point(51, 181);
+            this.lblDag.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDag.Name = "lblDag";
-            this.lblDag.Size = new System.Drawing.Size(30, 13);
+            this.lblDag.Size = new System.Drawing.Size(38, 17);
             this.lblDag.TabIndex = 18;
             this.lblDag.Text = "Dag:";
             // 
             // lblMaand
             // 
             this.lblMaand.AutoSize = true;
-            this.lblMaand.Location = new System.Drawing.Point(38, 114);
+            this.lblMaand.Location = new System.Drawing.Point(51, 140);
+            this.lblMaand.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblMaand.Name = "lblMaand";
-            this.lblMaand.Size = new System.Drawing.Size(43, 13);
+            this.lblMaand.Size = new System.Drawing.Size(55, 17);
             this.lblMaand.TabIndex = 19;
             this.lblMaand.Text = "Maand:";
             // 
             // lblJaar
             // 
             this.lblJaar.AutoSize = true;
-            this.lblJaar.Location = new System.Drawing.Point(38, 80);
+            this.lblJaar.Location = new System.Drawing.Point(51, 98);
+            this.lblJaar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblJaar.Name = "lblJaar";
-            this.lblJaar.Size = new System.Drawing.Size(30, 13);
+            this.lblJaar.Size = new System.Drawing.Size(40, 17);
             this.lblJaar.TabIndex = 20;
             this.lblJaar.Text = "Jaar:";
             // 
             // lblNaam
             // 
             this.lblNaam.AutoSize = true;
-            this.lblNaam.Location = new System.Drawing.Point(38, 26);
+            this.lblNaam.Location = new System.Drawing.Point(51, 32);
+            this.lblNaam.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNaam.Name = "lblNaam";
-            this.lblNaam.Size = new System.Drawing.Size(38, 13);
+            this.lblNaam.Size = new System.Drawing.Size(49, 17);
             this.lblNaam.TabIndex = 16;
             this.lblNaam.Text = "Naam:";
             // 
@@ -313,27 +338,31 @@ namespace DobbelSpellen
             this.gbSpeler.Controls.Add(this.pictureBox5);
             this.gbSpeler.Controls.Add(this.pictureBox6);
             this.gbSpeler.Controls.Add(this.pictureBox4);
-            this.gbSpeler.Location = new System.Drawing.Point(397, 12);
+            this.gbSpeler.Location = new System.Drawing.Point(529, 15);
+            this.gbSpeler.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gbSpeler.Name = "gbSpeler";
-            this.gbSpeler.Size = new System.Drawing.Size(338, 253);
+            this.gbSpeler.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbSpeler.Size = new System.Drawing.Size(451, 311);
             this.gbSpeler.TabIndex = 8;
             this.gbSpeler.TabStop = false;
             this.gbSpeler.Text = "Speler: ";
             // 
             // tbSpeler
             // 
-            this.tbSpeler.Location = new System.Drawing.Point(130, 217);
+            this.tbSpeler.Location = new System.Drawing.Point(173, 267);
+            this.tbSpeler.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tbSpeler.Name = "tbSpeler";
             this.tbSpeler.ReadOnly = true;
-            this.tbSpeler.Size = new System.Drawing.Size(79, 20);
+            this.tbSpeler.Size = new System.Drawing.Size(104, 22);
             this.tbSpeler.TabIndex = 10;
             // 
             // pictureBox5
             // 
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(129, 121);
+            this.pictureBox5.Location = new System.Drawing.Point(172, 149);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(80, 77);
+            this.pictureBox5.Size = new System.Drawing.Size(107, 95);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 8;
             this.pictureBox5.TabStop = false;
@@ -341,9 +370,10 @@ namespace DobbelSpellen
             // pictureBox6
             // 
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
-            this.pictureBox6.Location = new System.Drawing.Point(228, 32);
+            this.pictureBox6.Location = new System.Drawing.Point(304, 39);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(80, 77);
+            this.pictureBox6.Size = new System.Drawing.Size(107, 95);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox6.TabIndex = 9;
             this.pictureBox6.TabStop = false;
@@ -351,18 +381,21 @@ namespace DobbelSpellen
             // pictureBox4
             // 
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(33, 32);
+            this.pictureBox4.Location = new System.Drawing.Point(44, 39);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(80, 77);
+            this.pictureBox4.Size = new System.Drawing.Size(107, 95);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 0;
             this.pictureBox4.TabStop = false;
             // 
             // btnGooi
             // 
-            this.btnGooi.Location = new System.Drawing.Point(526, 321);
+            this.btnGooi.Enabled = false;
+            this.btnGooi.Location = new System.Drawing.Point(701, 395);
+            this.btnGooi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnGooi.Name = "btnGooi";
-            this.btnGooi.Size = new System.Drawing.Size(80, 19);
+            this.btnGooi.Size = new System.Drawing.Size(107, 23);
             this.btnGooi.TabIndex = 9;
             this.btnGooi.Text = "Gooi";
             this.btnGooi.UseVisualStyleBackColor = true;
@@ -371,59 +404,66 @@ namespace DobbelSpellen
             // lblComputer
             // 
             this.lblComputer.AutoSize = true;
-            this.lblComputer.Location = new System.Drawing.Point(459, 373);
+            this.lblComputer.Location = new System.Drawing.Point(612, 459);
+            this.lblComputer.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblComputer.Name = "lblComputer";
-            this.lblComputer.Size = new System.Drawing.Size(92, 13);
+            this.lblComputer.Size = new System.Drawing.Size(122, 17);
             this.lblComputer.TabIndex = 10;
             this.lblComputer.Text = "Punten Computer:";
             // 
             // lblSpeler
             // 
             this.lblSpeler.AutoSize = true;
-            this.lblSpeler.Location = new System.Drawing.Point(583, 373);
+            this.lblSpeler.Location = new System.Drawing.Point(777, 459);
+            this.lblSpeler.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSpeler.Name = "lblSpeler";
-            this.lblSpeler.Size = new System.Drawing.Size(77, 13);
+            this.lblSpeler.Size = new System.Drawing.Size(102, 17);
             this.lblSpeler.TabIndex = 11;
             this.lblSpeler.Text = "Punten Speler:";
             // 
             // tbPuntenSpeler
             // 
-            this.tbPuntenSpeler.Location = new System.Drawing.Point(586, 399);
+            this.tbPuntenSpeler.Location = new System.Drawing.Point(781, 491);
+            this.tbPuntenSpeler.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tbPuntenSpeler.Name = "tbPuntenSpeler";
             this.tbPuntenSpeler.ReadOnly = true;
-            this.tbPuntenSpeler.Size = new System.Drawing.Size(89, 20);
+            this.tbPuntenSpeler.Size = new System.Drawing.Size(117, 22);
             this.tbPuntenSpeler.TabIndex = 12;
             // 
             // tbPuntenComputer
             // 
-            this.tbPuntenComputer.Location = new System.Drawing.Point(462, 399);
+            this.tbPuntenComputer.Location = new System.Drawing.Point(616, 491);
+            this.tbPuntenComputer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tbPuntenComputer.Name = "tbPuntenComputer";
             this.tbPuntenComputer.ReadOnly = true;
-            this.tbPuntenComputer.Size = new System.Drawing.Size(89, 20);
+            this.tbPuntenComputer.Size = new System.Drawing.Size(117, 22);
             this.tbPuntenComputer.TabIndex = 13;
             // 
             // lblWinnaar
             // 
             this.lblWinnaar.AutoSize = true;
-            this.lblWinnaar.Location = new System.Drawing.Point(777, 283);
+            this.lblWinnaar.Location = new System.Drawing.Point(1036, 348);
+            this.lblWinnaar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblWinnaar.Name = "lblWinnaar";
-            this.lblWinnaar.Size = new System.Drawing.Size(47, 13);
+            this.lblWinnaar.Size = new System.Drawing.Size(61, 17);
             this.lblWinnaar.TabIndex = 14;
             this.lblWinnaar.Text = "Winnaar";
             // 
             // lbResultaten
             // 
             this.lbResultaten.FormattingEnabled = true;
-            this.lbResultaten.Location = new System.Drawing.Point(961, 299);
+            this.lbResultaten.ItemHeight = 16;
+            this.lbResultaten.Location = new System.Drawing.Point(1281, 368);
+            this.lbResultaten.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.lbResultaten.Name = "lbResultaten";
-            this.lbResultaten.Size = new System.Drawing.Size(157, 186);
+            this.lbResultaten.Size = new System.Drawing.Size(208, 228);
             this.lbResultaten.TabIndex = 15;
             // 
             // Form3
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1143, 500);
+            this.ClientSize = new System.Drawing.Size(1524, 615);
             this.Controls.Add(this.lbResultaten);
             this.Controls.Add(this.lblWinnaar);
             this.Controls.Add(this.tbPuntenComputer);
@@ -439,6 +479,7 @@ namespace DobbelSpellen
             this.Controls.Add(this.Speloverzicht);
             this.Controls.Add(this.picWinnaar);
             this.Controls.Add(this.gbComputer);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form3";
             this.Text = "Hoger - Lager";
             this.gbComputer.ResumeLayout(false);
