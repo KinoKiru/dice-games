@@ -1,7 +1,8 @@
 
     document.addEventListener("contextmenu", function(e){
     e.preventDefault();
-    alert("Copyright HQS");
+        $('#bs_Warning').show();
+        window.setTimeout(hide, 2000);
 }, false); /*dit is voor de rechter muisknop*/
 
 

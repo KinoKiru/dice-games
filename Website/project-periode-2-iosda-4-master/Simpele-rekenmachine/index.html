@@ -14,7 +14,7 @@
     <link rel="icon" href="afbeeldingen/HQS_Logo.png">
 
 </head>
-<body  id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60" oncontextmenu="return false">
+<body  id="myPage" data-spy="scroll" data-target=".navbar" onload="alert('welcome: ' + getCookie('Username'))" data-offset="60" oncontextmenu="return false">
 
 <div class="  alert alert-dark collapse" id="bs_Warning" role="alert">
     Well, This is awkward! You wanted to vieuw our source code?!. Damn you Heathen
@@ -111,7 +111,7 @@
             </div>
         </div>
             <!-- "Waarden" text -->
-        <div class = "row">
+        <div class = "row mb-3">
             <div class="w-100 d-flex justify-content-center">
                 <div class="col-sm-4 text-center">
                     <div id="accordion" role="tablist">
@@ -225,13 +225,8 @@
                         </a>
                         </div>
                     </div> <!--einde container dobbelspellen-->
-
-
-
                     <br>
                 </div> <!--einde row-->
-
-
             </div> <!--einde container fluid-->
         </div>
     </div>
@@ -241,7 +236,7 @@
 
     <h2 class="text-center">CONTACT</h2>
 
-    <div class="row">
+    <div class="row text-nowrap">
         <div class="col-sm-5 text-center">
 
             <p>Contact opnemen?</p>
@@ -366,6 +361,22 @@
 <script src="Styles/disable.js"></script>
 <script src="Styles/beveiliging%20&%20download%20teller.js"></script>
 <script src="Styles/darkmode.js"></script>
+<script>
+    darkMode = localStorage.getItem('darkMode');
+    if (darkMode === 'enabled') {
+        let contact = document.getElementById('collapseOne');
+        contact.classList.toggle('text-dark');
+    }
+</script>
+<script>
+    function getCookie(name)
+    {
+        let re = new RegExp(name + "=([^;]+)");
+        let value = re.exec(document.cookie);
+
+        return (value != null) ? unescape(value[1]) : null;
+    }
+</script> <!--script voor welcome message-->
 
 </body>
 </html>
