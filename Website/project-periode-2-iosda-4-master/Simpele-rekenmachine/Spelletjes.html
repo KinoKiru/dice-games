@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dobbelspellen</title>
+    <link rel="stylesheet" href="Styles/bootstrap/bootstrap-4.5.3-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="Styles/main.css">
+    <link rel="icon" href="afbeeldingen/HQS_Logo.png">
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60" oncontextmenu="return false">
+
+<div class="  alert alert-dark collapse" id="bs_Warning" role="alert">
+    Well, This is awkward! You wanted to vieuw our source code?!. Damn you Heathen
+</div>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+
+            </button>
+
+            <a class="navbar-brand" style="padding-top: 7.5px;" href="index.html"><img
+                    src="afbeeldingen/HQS_Logo.png" class="Image" alt=""></a>
+
+        </div>
+
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+
+                <li><a href="index.html#about">OVER ONS</a></li>
+                <li><a href="index.html#mission">MISSIE</a></li>
+                <li><a href="index.html#services">WAARDEN</a></li>
+                <li><a href="index.html#portfolio">PORTFOLIO</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+                <li><a id="date" href="#"></a></li>
+
+                <script>
+
+                    var today = new Date();
+                    var date = today.getDate() + '-' + (today.getMonth() + 1) + '-' + today.getFullYear();
+                    document.getElementById("date").innerHTML = "DATUM: " + date;
+
+                </script> <!--script voor de dag-maand-jaar-->
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div  id="jumbo" class="jumbotron text-center">
+    <h1>HQS Dobbelspellen</h1>
+    <p>Onze meest recente ontwikkeling</p>
+</div> <!--div voor onder de header-->
+
+<div class="container-fluid">
+    <div class="row p-0 m-0">
+        <div class="col-sm-6">
+        <img class=" mb-2 img-fluid shadow-lg " style="border-radius: 10%" src="afbeeldingen/Bonus_dobbel.png" alt="Bonus_dobbel">
+        </div>
+        <div class="col-sm-6">
+            <h2 class="mb-0">Bonus dobbel</h2>
+            <p>Dit is het spel bonus dobbel, u kiest eerst een foto naam en uw geboortedatum.
+                Nadat u dat heet gedaan klikt u op Check die kijkt of u alles correct heeft ingevuld zo ja? dan kunt u verder.<br>
+                U kiest dan voor een getal tussen 1-6 en klikt op ga dan ziet u 4 dobbelstenen is uw gekozen getal tussen de dobbelstenen? dan krijgt u per gelijke getal 1 punt extra <br>
+            alles wordt vervolgens opgetelt en dan kunt u zien hoeveel punten u per ronde heeft verdient na 4 rondes ziet u de totaal punten en wordt de winnaar bekend gemaakt.</p>
+        </div>
+    </div>
+
+    <div class="row p-0 m-0">
+        <div class="col-sm-6">
+            <img class="mb-2 img-fluid shadow-lg" style="border-radius: 10%" src="afbeeldingen/hoger_lager.png" alt="Hoger_lager">
+        </div>
+        <div class="col-sm-6">
+            <h2>Hoger Lager</h2>
+            <p>Het Hoger lager spel: U vult uw gegevens in en u speelt tegen de computer. u heeft de keuze: zal uw dobbelstenen meer of minder waard zijn dan de computer? <br>
+            zo ja? gefeliciteerd u heeft de ronde gewonnen en een punt gewonnen als dit niet het geval is dan krijgt de computer een punt. De dobbelstenen zijn geheel random</p>
+        </div>
+    </div>
+
+    <div class="row p-0 m-0">
+        <div class="col-sm-6">
+            <img src="afbeeldingen/Play_21.png" style="border-radius: 10%" class=" img-fluid mb-2 shadow-lg" alt="">
+        </div>
+        <div class="col-sm-6">
+            <h2>Play 21</h2>
+            <p>Het Play 21 spel: Hier moet u zo dicht mogelijk bij de 21 komen maar als u hoger gaat bent u af, U speelt tegen een andere speler de gene die het dichts bij de 21 weet te komen wint <br>
+            Ook dit spel wordt gespeeld met dobbelstenen dus de waardes liggen tussen de 1-6</p>
+        </div>
+    </div>
+    <a href="" class="mt-2 no-decoration align-self-center text-center btn-lg btn-outline-info text-info">Download</a>
+</div>
+
+
+
+
+
+
+
+
+<div id="contact" class="container-fluid bg-grey p-0">
+
+    <h2 class="text-center">CONTACT</h2>
+
+    <div class="row">
+        <div class="col-sm-5 text-center">
+
+            <p>Contact opnemen?</p>
+            <p><span class="glyphicon glyphicon-map-marker"></span> Almelo, NL</p>
+            <p><span class="glyphicon glyphicon-phone"></span> +31 0646854690</p>
+            <p><span class="glyphicon glyphicon-envelope"></span> respons@hqsinternational.org</p>
+
+        </div>
+
+        <!-- Container (Contact) Second Part -->
+        <form action="mailto:respons@hqsinternational.org" method="post" enctype="text/plain">
+            <div class="col-sm-7 slideanim">
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+
+                        <input class="form-control" id="naam" name="naam" placeholder="Naam" type="text" required>
+
+                    </div>
+
+                    <div class="col-sm-6 form-group">
+
+                        <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+
+                    </div>
+                </div>
+
+                <!--Selectbox om de stakeholder aan te geven-->
+                <div id="id3"> 
+                    <div class=" d-flex justify-content-center">
+             
+                    </div>
+                    <div class=" d-flex justify-content-center">
+                        <select id="Stakeholder" name="Stakeholder">
+                            <option value="Leeg vak"></option>
+                            <option value="G.Wargers">G.Wargers</option>
+                            <option value="G.Muller">G.Muller</option>
+                            <option value="T.Berenpas">T.Berenpas</option>
+                            <option value="L.Bekhuis">L.Bekhuis</option>
+                            <option value="Y.Bakker">Y.Bakker</option>
+                        </select>
+                    </div>
+                </div>
+
+                <br>
+
+                <!--Sumbmit knopje waarmee je alles verstuur naam het ingestelde email adress-->
+                <textarea class="form-control" id="text" name="text" placeholder="Tekst" rows="5"></textarea><br>
+                <div class="row">
+                    <div class="col-sm-12 form-group">
+
+                        <button id="knopje" class="btn  btn-outline-info btn-default pull-right" type="submit">Verstuur</button>
+
+                    </div>
+                </div>
+
+                <br>
+
+                        <!--Progressbar code, om de bar er in te zetten-->
+                        <div class="progress mb-4">
+                            <div class="progress-bar" role="progressbar" aria-valuenow="70"
+                            aria-valuemin="0" aria-valuemax="100" style="width:20%">
+                              <span class="sr-only">20% Complete</span>
+                            </div>
+                        </div>
+            </div>
+        </form>
+    </div>
+</div> <!--dit is de gehele contact pagina-->
+
+
+<!-- Footer -->
+<footer class="container-fluid text-center">
+
+    <a href="#myPage" title="To Top">
+        <span class="glyphicon glyphicon-chevron-up"></span>
+    </a>
+    <p>Copyright® of High Quality Software 2021</p>
+    <p>Gemaakt door: Thomas Berenpas(0330187), Youri Bakker(0327099) en Luuk Bekhuis(03280260)</p>
+
+</footer>
+
+<!-- Script -->
+<script>
+    $(document).ready(function () {
+        // Add smooth scrolling to all links in navbar + footer link
+        $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+                // Prevent default anchor click behavior
+                event.preventDefault();
+
+                // Store hash
+                var hash = this.hash;
+
+                // Using jQuery's animate() method to add smooth page scroll
+                // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 900, function () {
+
+                    // Add hash (#) to URL when done scrolling (default click behavior)
+                    window.location.hash = hash;
+                });
+            } // End if
+        });
+
+        $(window).scroll(function () {
+            $(".slideanim").each(function () {
+                var pos = $(this).offset().top;
+
+                var winTop = $(window).scrollTop();
+                if (pos < winTop + 600) {
+                    $(this).addClass("slide");
+                }
+            });
+        });
+    })
+</script>
+<br>
+<!-- Bootstrap en jquery files -->
+<script src="Styles/bootstrap/jquery/jquery-3.5.1.min.js"></script>
+<script src="Styles/bootstrap/bootstrap-4.5.3-dist/js/bootstrap.js"></script>
+<script src="Styles/disable.js"></script>
+<script src="Styles/beveiliging%20&%20download%20teller.js"></script>
+<script src="Styles/darkmode.js"></script>
+<script>
+    darkMode = localStorage.getItem('darkMode');
+    if (darkMode === 'enabled') {
+        let contact = document.getElementById('contact');
+        contact.classList.toggle('darkmodeContainer');
+    }
+</script>
+</body>
+</html>

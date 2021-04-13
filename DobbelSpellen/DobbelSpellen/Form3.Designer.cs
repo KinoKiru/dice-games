@@ -193,7 +193,7 @@ namespace DobbelSpellen
             this.radLager.TabIndex = 6;
             this.radLager.Text = "Lager";
             this.radLager.UseVisualStyleBackColor = true;
-            this.radLager.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
+
             // 
             // gbInfo
             // 
@@ -438,6 +438,7 @@ namespace DobbelSpellen
             this.tbPuntenComputer.ReadOnly = true;
             this.tbPuntenComputer.Size = new System.Drawing.Size(117, 22);
             this.tbPuntenComputer.TabIndex = 13;
+    
             // 
             // lblWinnaar
             // 
