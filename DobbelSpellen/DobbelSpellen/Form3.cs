@@ -125,6 +125,7 @@ namespace DobbelSpellen
                 // Bepalen wie de winnaar is
                 if (PuntenSpeler < PuntenComputer)
                 {
+                    btnGooi.Enabled = false;
                     // de resultaten worden getoont in de listbox
                     Speloverzicht.Items.Add(string.Format("Computer " + " " + "heeft gewonnen met " + (PuntenComputer - PuntenSpeler) + " punten" + "\r\n"));
                     recent = DateTime.Now;
@@ -136,6 +137,7 @@ namespace DobbelSpellen
                 }               
                 else if (PuntenSpeler > PuntenComputer)
                 {
+                    btnGooi.Enabled = false;
                     // de resultaten worden getoont in de listbox
                     Speloverzicht.Items.Add(tbNaam.Text + " " + "heeft gewonnen met: " + (PuntenSpeler - PuntenComputer) + " Punten" + "\r\n");
                     recent = DateTime.Now;
