@@ -11,10 +11,8 @@ function buttonState(){
     // als hij volledig is dan zal hij disabled van de link/button afhalen en daarna de cookies maken
     button.classList.remove('disabled')
     document.cookie = "Username=" + Username +";expires= Thu, 01 Jan 2030 00:00:00 UTC; path=/;"
-    document.cookie = "password=" + password +";expires= Thu, 01 Jan 2030 00:00:00 UTC; path=/;"
+    document.cookie = "password=" + password +";expires= Thu, 01 Jan 2030 00:00:00 UTC; path=\;"
 }
-
-
 
 $(function(){
     $('#knopje').attr('disabled', 'disabled');
