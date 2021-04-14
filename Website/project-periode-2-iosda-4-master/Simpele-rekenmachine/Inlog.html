@@ -11,7 +11,7 @@
     <link rel="icon" href="afbeeldingen/HQS_Logo.png">
 </head>
 <body id="backgroundPhotoInlog" class="vh-100">
-<div class="  alert alert-dark collapse" id="bs_Warning" role="alert">
+<div class="alert alert-dark collapse" id="bs_Warning" role="alert">
     Well, This is awkward! You wanted to vieuw our source code?!. Damn you Heathen
 </div>
 <div class="row h-100 m-0">
@@ -29,7 +29,7 @@
                   <input id="password" type="password" value="" class="form-control ml-1 mb-2" placeholder="Voer uw wachtwoord in" required>
            </div>
 <div class="text-center"> <!--hier centreer ik de knop, deze knop linkt je door naar de home page maar daarvoor geeft hij een welcome message -->
-            <a id="knopje" type="submit" onclick="alert('Welcome: '+ getCookie('Username'))" class="btn btn-primary disabled" name="submitButton" href="Tussenpagina.html">Doorgaan</a>
+            <a id="knopje" type="submit"  class="btn btn-primary disabled" name="submitButton" href="Tussenpagina.html">Doorgaan</a>
 </div>
          </form>
         </div>
@@ -42,13 +42,4 @@
 <script src="Styles/disable.js"></script>
 <script src="Styles/Cookies.js"></script> <!--hier maak ik de cookies aan voor de inlog codes-->
 <script src="Styles/darkmode.js"></script> <!--script voor de darkmode-->
-<script>
-    function getCookie(name)
-    {
-        let re = new RegExp(name + "=([^;]+)");
-        let value = re.exec(document.cookie);
-
-        return (value != null) ? unescape(value[1]) : null;
-    }
-</script> <!--script voor welcome message-->
 </html>

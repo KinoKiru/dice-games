@@ -14,8 +14,6 @@ function buttonState(){
     document.cookie = "password=" + password +";expires= Thu, 01 Jan 2030 00:00:00 UTC; path=\;"
 }
 
-
-
 $(function(){
     $('#knopje').attr('disabled', 'disabled');
     $('input').change(buttonState);
